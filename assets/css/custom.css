@@ -114,18 +114,22 @@
   font-size: 2rem;
   font-weight: normal;
 }
+
 .sub_heading {
   font-size: 3.5rem;
   font-weight: bold;
 }
+
 .safe_delivery {
   color: #95f70d;
 }
+
 .additional_heading {
   font-size: 2rem;
   font-weight: bold;
   padding-top: 1rem;
 }
+
 .btn_booknow {
   background: #80dc00;
   color: #fff;
@@ -134,6 +138,7 @@
   border: 1px solid #80dc00;
   padding: 10px 60px;
 }
+
 .btn_booknow:hover {
   background: #fff !important;
   color: #80dc00;
@@ -149,15 +154,18 @@
     font-size: 1.5rem;
     font-weight: normal;
   }
+
   .sub_heading {
     font-size: 2.2rem;
     font-weight: bold;
   }
+
   .additional_heading {
     font-size: 1.5rem;
     font-weight: bold;
     padding-top: 1rem;
   }
+
   .btn_booknow {
     background: #80dc00;
     color: #fff;
@@ -166,6 +174,7 @@
     border: 1px solid #80dc00;
     padding: 10px 40px;
   }
+
   .btn_booknow:hover {
     background: #fff !important;
     color: #80dc00;
@@ -175,21 +184,25 @@
     padding: 10px 40px;
   }
 }
+
 /* banner end  */
 
 /* who we are start  */
 .who_we_are {
   padding: 40px;
 }
+
 .who_we_are .who_heading {
   font-size: 26px;
   font-weight: 600;
 }
+
 .who_we_are .who_sub_heading {
   font-size: 52px;
   font-weight: 600;
   color: #80dc00;
 }
+
 .who_we_are .who_sub_content {
   font-size: 18px;
   font-weight: 500;
@@ -202,12 +215,14 @@
     font-weight: 600;
     text-align: center;
   }
+
   .who_we_are .who_sub_heading {
     font-size: 32px;
     font-weight: 600;
     color: #80dc00;
     text-align: center;
   }
+
   .who_we_are .who_sub_content {
     font-size: 14px;
     font-weight: 500;
@@ -215,30 +230,36 @@
     text-align: center;
   }
 }
+
 .who_icons {
   color: #80dc00;
   font-size: 1.5rem;
   padding: 0 5px;
 }
+
 .who_icons_text {
   font-size: 16px;
   font-weight: 500;
   padding: 10px 0;
 }
+
 /* who we are end   */
 
 /* why trcuklah start  */
 .why_trucklah {
   padding: 40px 0;
 }
+
 .why_section_card_col {
   padding: 30px;
 }
+
 .card_img_icon {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
+
 .why_heading {
   font-size: 3rem;
   font-weight: 600;
@@ -254,16 +275,19 @@
     padding-bottom: 5rem;
     text-align: center;
   }
+
   .card_img_icon {
     width: 70px;
     height: 70px;
     border-radius: 50%;
   }
+
   .why_card_title {
     color: #80dc00;
     text-align: center;
     font-size: 1.5rem;
   }
+
   .why_card_sub_title {
     color: #333;
     text-align: center;
@@ -271,17 +295,20 @@
     font-size: 1rem;
     font-weight: 600;
   }
+
   .position_icons {
     position: relative;
     top: 0 !important;
     padding: 10px 0;
   }
+
   .cardcontents {
     position: relative;
     top: 0 !important;
     padding: 10px 0;
   }
 }
+
 .why_cards {
   display: flex;
   justify-content: center;
@@ -290,11 +317,13 @@
   border: none;
   padding: 0 1rem;
 }
+
 .why_card_title {
   color: #80dc00;
   text-align: center;
   font-size: 1.7rem;
 }
+
 .why_card_sub_title {
   color: #333;
   text-align: center;
@@ -307,6 +336,7 @@
   position: relative;
   top: -50px;
 }
+
 .cardcontents {
   position: relative;
   top: -30px;
@@ -374,6 +404,7 @@
   .footer-links {
     padding: 0 !important;
   }
+
   .footer-links .links2 {
     display: flex !important;
     justify-content: center !important;
@@ -528,6 +559,7 @@
   width: 100px;
   height: auto;
 }
+
 /* footer end   */
 
 .SuccessMagnetSubHeading {
@@ -566,4 +598,163 @@
 .lazyloaded {
   opacity: 1;
 }
+
 /* Lazyloader */
+
+.banner_middle_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+.banner_midle {
+  text-align: center;
+  width: 200px;
+}
+
+.banner_middle_image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 100px;
+}
+
+.banner_midle_tittle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  position: relative;
+  top: -50px;
+}
+
+.faq_body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('/assets//images/shipping_done_image.webp') no-repeat center center fixed;
+  /* Replace with your image path */
+  background-size: cover;
+  color: #fff;
+}
+
+.faq-container {
+  /* max-width: 800px; */
+  /* margin: 50px auto; */
+  /* padding: 20px; */
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  /* Black background with transparency */
+  /* border-radius: 10px; */
+}
+
+h2 {
+  text-align: center;
+  color: #b7ff00;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.accordion {
+  /* background-color: #000; */
+  color: #b7ff00 !important;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+  background-color: #444;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #333;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.panel p {
+  padding: 10px 0;
+  color: #ccc;
+}
+
+.moving-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content h1 {
+  font-size: 24px;
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.text-content h2 {
+  font-size: 36px;
+  color: #56c134;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.call-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #56c134;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.call-button:hover {
+  background-color: #45a523;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.faq_accordion {
+  background: transparent !important;
+  border: 1px solid #56c134;
+  border-radius: 10px;
+}
+
+.faq_content {
+  background: url(/assets/images/accordion.jpg) center no-repeat;
+  background-size: contain;
+
+
+}
+
+.faq_accordion .accordion-header {
+  background: transparent !important;
+}
