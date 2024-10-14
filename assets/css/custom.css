@@ -214,7 +214,6 @@
   font-size: 18px;
   font-weight: 500;
   color: #333;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -341,13 +340,9 @@
 }
 
 .truck_shadow {
-
   box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
   position: relative;
-
 }
-
-
 
 .position_icons {
   position: relative;
@@ -360,7 +355,6 @@
 }
 
 /* why trcuklah end  */
-
 
 /* / footer start  / */
 .footer {
@@ -608,7 +602,6 @@
   justify-content: space-around;
   align-items: center;
   padding: 50px;
-
 }
 
 .arc_line {
@@ -655,13 +648,11 @@
   .banner_middle_title {
     flex-direction: column;
     align-items: center;
-
   }
 
   .banner_midle {
     width: 90%;
     margin-bottom: 10px;
-
   }
 
   .arc_line,
@@ -683,7 +674,8 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('/assets//images/shipping_done_image.webp') no-repeat center center fixed;
+  background: url("/assets//images/shipping_done_image.webp") no-repeat center
+    center fixed;
   /* Replace with your image path */
   background-size: cover;
   color: #fff;
@@ -745,7 +737,7 @@
 
 /* Ensure full-width background image */
 .moving_image {
-  background: url('/assets/images/Singapore1.svg') no-repeat center center;
+  background: url("/assets/images/Singapore1.svg") no-repeat center center;
   background-size: contain;
   width: 100%;
   height: 400px;
@@ -778,7 +770,6 @@
 @media (max-width: 768px) {
   .moving_image {
     height: 40vh;
-
   }
 
   .call-button-btn {
@@ -790,7 +781,6 @@
 @media (max-width: 480px) {
   .moving_image {
     height: 30vh;
-
   }
 
   .call-button-btn {
@@ -799,28 +789,30 @@
   }
 }
 
-
 .download_card {
-
   border-radius: 10px;
   padding: 42px;
   text-align: center;
   /* width: 950px; */
   margin: 0 auto;
-  background-color: #dedada;
   position: relative;
-  /* top: -100px; */
+  top: -120px;
+}
+
+@media screen and (max-width: 555px) {
+  .download_card {
+    top: 0 !important;
+  }
 }
 
 .app-links {
+  background-color: #dedada;
   display: flex;
-
   flex-direction: row;
-
   align-items: center;
-
   justify-content: center;
-
+  padding: 45px;
+  border-radius: 10px;
 }
 
 .app-links a {
@@ -833,15 +825,11 @@
   color: #333;
 }
 
-
-
 .app-links img {
   width: 120px;
 
   height: auto;
-
 }
-
 
 @media (min-width: 576px) {
   .app-links img {
@@ -862,16 +850,21 @@
   border-width: medium;
 }
 
+button.accordion-button::after {
+  background-image: url("/assets/images/open.webp");
+}
+
+button.accordion-button:not(.collapsed)::after {
+  background-image: url("/assets/images/close.webp");
+}
+
 .faq_content {
-  background: url(/assets/images/Untitled\ design\ \(2\).png) center center no-repeat;
+  background: linear-gradient(180deg, #0b1820f2, #0b1820f2, #0b1820f2),
+    url("/assets/images/accordian_bg.webp") center no-repeat;
   background-size: cover;
   width: 100%;
   padding: 20px;
-  /* min-height: 950px !important; */
-
-
 }
-
 
 .faq_item {
   background: transparent !important;
@@ -882,21 +875,17 @@
   color: #56c134;
   box-shadow: none !important;
   font-weight: bold !important;
-  ;
-
 }
 
 .faq_collapsed:active {
   background: transparent !important;
   color: #56c134;
   box-shadow: none !important;
-
 }
 
 .faq_sub_content {
   background: transparent !important;
   color: #fff !important;
-
 }
 
 .faq_h1 {
@@ -922,7 +911,6 @@
   /* background: url('/assets/images/your-background-image.jpg') no-repeat center center/cover; */
 }
 
-
 .faq-title {
   color: #8fd843;
 
@@ -930,10 +918,7 @@
 
   font-weight: bold;
   text-align: center;
-
-
 }
-
 
 .faq-underline {
   width: 150px;
@@ -942,7 +927,6 @@
 
   background-color: #8fd843;
   margin-top: 10px;
-
 }
 
 /* / section Start / */
@@ -961,7 +945,6 @@
   /* / border-radius: 10px; / */
   margin: 2.5rem 1.5rem;
   padding: 0 !important;
-
 }
 
 .moving_pills {
@@ -1053,7 +1036,6 @@
   background: #e2e2e4;
   border: none;
   border-radius: 0 5px 5px 5px;
-
 }
 
 .tab-content {
@@ -1065,7 +1047,6 @@
   font-size: 18px;
   color: #333;
 }
-
 
 .tick_green {
   color: #89dc14;
