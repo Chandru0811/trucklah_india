@@ -342,10 +342,12 @@
 
 .truck_shadow {
 
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: rgb(0 0 0 / 50%) 0px -6px 6px -6px;
   position: relative;
 
 }
+
+
 
 .position_icons {
   position: relative;
@@ -609,9 +611,23 @@
 
 }
 
+.arc_line {
+  transform: rotate(170deg);
+  width: 100%;
+  height: 100%;
+}
+
+.arc_line2 {
+  display: flex;
+  justify-content: start;
+  transform: rotate(15deg);
+  width: 100%;
+  height: 100%;
+}
+
 .banner_midle {
   text-align: center;
-  /* width: 200px; */
+  width: 200px;
 }
 
 .banner_middle_image {
@@ -633,6 +649,34 @@
   margin: 0 20px;
   position: relative;
   top: -50px;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner_middle_title {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .banner_midle {
+    width: 90%;
+    margin-bottom: 10px;
+
+  }
+
+  .arc_line,
+  .arc_line2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner_middle_image {
+    max-width: 80%;
+  }
+
+  .banner_midle_tittle {
+    font-size: 16px;
+  }
 }
 
 .faq_body {
