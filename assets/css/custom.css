@@ -265,6 +265,8 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  background: #80dc00;
+  padding: 10px;
 }
 
 .why_heading {
@@ -307,6 +309,7 @@
     position: relative;
     top: 0 !important;
     padding: 10px 0;
+    background: #6ed237 !important;
   }
 
   .cardcontents {
@@ -674,8 +677,7 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url("/assets//images/shipping_done_image.webp") no-repeat center
-    center fixed;
+  background: url("/assets//images/shipping_done_image.webp") no-repeat center center fixed;
   /* Replace with your image path */
   background-size: cover;
   color: #fff;
