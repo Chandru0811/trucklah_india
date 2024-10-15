@@ -156,6 +156,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .banner_truck {
+    position: relative;
+    bottom: -1rem;
+  }
   .heading_banner {
     font-family: "Afacad", system-ui;
     font-size: 1.5rem;
@@ -280,11 +284,21 @@ hr {
   padding: 30px 20px;
 }
 @media screen and (max-width: 555px) {
+  hr {
+    display: none !important;
+  }
   .why_section_card_col {
     padding: 10px;
   }
   .why_trucklah {
     padding: 0 !important;
+  }
+  .card_img_icon {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    background: #80dc00;
+    padding: 10px;
   }
 }
 
@@ -304,6 +318,9 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .why_cards {
+    padding: 0 !important;
+  }
   .why_heading {
     font-size: 2rem;
     font-weight: 600;
@@ -322,13 +339,13 @@ hr {
   .why_card_title {
     color: #80dc00;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem !important;
   }
 
   .why_card_sub_title {
     color: #333;
     text-align: center;
-    padding: 0 15px;
+    padding: 0 x5px;
     font-size: 1rem;
     font-weight: 600;
   }
@@ -345,6 +362,9 @@ hr {
     position: relative;
     top: 0 !important;
     padding: 10px 0;
+  }
+  .why_section_card_col {
+    padding: 5px !important;
   }
 }
 
@@ -407,6 +427,11 @@ hr {
   padding: 0 0 40px 0 !important;
 }
 
+@media screen and (max-width: 992px) {
+  .footer-title {
+    font-size: 1rem !important;
+  }
+}
 @media screen and (max-width: 425px) {
   .input-colum {
     width: 100% !important;
@@ -582,6 +607,34 @@ hr {
   top: -140px;
 }
 
+@media screen and (max-width: 786px) {
+  .contact_form {
+    position: relative;
+    top: 0px !important;
+  }
+  .form_heading {
+    text-align: center !important;
+    font-size: 1rem;
+  }
+  .footer_submit {
+    background-color: #333;
+    color: white;
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: #333 solid 1px;
+  }
+  .form_button_footer {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .form_col {
+    padding: 10px !important;
+  }
+}
+
 .copyrights {
   background: #fff;
   color: #000;
@@ -660,6 +713,9 @@ hr {
 }
 .banner_midle {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
 }
 
@@ -812,7 +868,11 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .moving-section {
+    top: 0 !important;
+  }
   .moving_image {
+    top: 0 !important;
     height: 40vh;
   }
 
@@ -846,6 +906,16 @@ hr {
 @media screen and (max-width: 555px) {
   .download_card {
     top: 0 !important;
+  }
+  .app-links {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+  }
+  .download_card {
+    padding: 10px !important;
   }
 }
 
@@ -971,7 +1041,17 @@ button.accordion-button:not(.collapsed)::after {
   text-align: center;
 }
 
+.let_us_content {
+  padding: 10px 0 !important;
+}
 @media screen and (max-width: 555px) {
+  .let_us_content {
+    padding: 0 !important;
+  }
+  .faq_h2 {
+    font-size: 22px !important;
+    padding: 10px 0;
+  }
   .faq-title {
     color: #8fd843;
     font-size: 28px;
@@ -1025,6 +1105,17 @@ button.accordion-button:not(.collapsed)::after {
 }
 
 @media screen and (max-width: 626px) {
+  .who_img_content {
+    padding: 0 !important;
+  }
+  .moving_section {
+    background: #80dc00;
+    padding: 10px 0 !important;
+  }
+  .moving_header {
+    position: relative;
+    bottom: 0 !important;
+  }
   .homeSection-2_tab {
     display: block;
     margin: 0 !important;
