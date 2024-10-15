@@ -1189,6 +1189,7 @@ button.accordion-button:not(.collapsed)::after {
   font-size: 22px;
   background: #e2e2e4;
   border: none;
+  padding: 0 !important;
   border-radius: 0 5px 5px 5px;
 }
 
