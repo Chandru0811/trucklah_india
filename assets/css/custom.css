@@ -20,6 +20,16 @@
   }
 }
 
+.login_button_toggle {
+  background: #6ed237;
+  color: #fff;
+  padding: 5px 30px;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  border: 1px solid #6ed237;
+}
 .login_button {
   background: #6ed237;
   color: #fff;
@@ -34,7 +44,11 @@
 .login_button:hover {
   background: #fff;
   color: #6ed237;
-  padding: 11px 60px;
+  padding: 11px 50px;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-weight: bolder;
   border: 1px solid #6ed237;
 }
 
@@ -136,7 +150,8 @@
   font-size: 1.5rem;
   font-weight: 600;
   border: 1px solid #80dc00;
-  padding: 10px 60px;
+  padding: 10px 50px;
+  margin: 0 0 20px 0;
 }
 
 .banner_truck {
@@ -152,7 +167,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   border: 1px solid #80dc00;
-  padding: 10px 60px;
+  padding: 10px 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -684,21 +699,22 @@ hr {
 .banner_middle_title {
   display: flex;
   justify-content: space-around;
-  padding: 0 50px;
+  padding: 10px 100px !important;
 }
 
 .arc_line {
-  transform: rotate(200deg);
+  transform: rotate(170deg);
   width: 100%;
   height: 100%;
 }
 
 .arc_line2 {
   display: flex;
-  justify-content: start;
-  transform: rotate(18deg);
+  transform: rotate(15deg);
   width: 100%;
   height: 100%;
+  position: relative;
+  top: -109px;
 }
 
 @media screen and (max-width: 555px) {
@@ -725,7 +741,7 @@ hr {
 }
 
 .banner_midle_tittle {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -894,11 +910,15 @@ hr {
 .download_card {
   border-radius: 10px;
   padding: 42px;
-  text-align: center;
-  /* width: 950px; */
+  text-align: center !important;
   margin: 0 auto;
   position: relative;
   top: -120px;
+}
+
+.download_text {
+  font-size: 2rem !important;
+  padding: 0 2rem;
 }
 
 @media screen and (max-width: 555px) {
@@ -933,7 +953,6 @@ hr {
 
 .download_card h2 {
   font-size: 24px;
-  margin-bottom: 20px;
   color: #333;
 }
 
