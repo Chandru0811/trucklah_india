@@ -1262,7 +1262,7 @@ button.accordion-button:not(.collapsed)::after {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1255px) {
   .form-card {
     position: relative;
     left: 0 !important;
