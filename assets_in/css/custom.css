@@ -1275,6 +1275,7 @@ button.accordion-button:not(.collapsed)::after {
   left: 8rem;
   top: -13rem;
   height: 10px;
+  margin: 0;
 }
 .form-active-tab .nav-link {
   color: black !important;
@@ -1296,8 +1297,20 @@ button.accordion-button:not(.collapsed)::after {
   color: #fff;
   border-top: 2px solid #e2e2e4;
 }
-.homeSection-3 .nav-pills .nav-link{
+.homeSection-3 .nav-pills .nav-link {
   color: #80dc00;
 }
 
 /* / section End / */
+
+.focus_input:focus {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 1484px) {
+  .form-card {
+    margin: 0 20px !important;
+    max-width: fit-content;
+    text-align: center;
+  }
+}

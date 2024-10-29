@@ -152,307 +152,506 @@
           <h3 class="additional_heading text-center">
             Courier & Delivery Service
           </h3>
-          <a href="#" class="btn btn_booknow mt-3">BOOK NOW</a>    
+          <a href="#" class="btn btn_booknow mt-3">BOOK NOW</a>
         </div>
         <div class="m-0 flex-column px-5 banner_truck">
-          <div class="m-0 p-0 d-flex justify-content-end align-items-center mb-0 pb-0">
+          <div
+            class="row m-0 p-0 d-flex justify-content-end align-items-center mb-0 pb-0"
+          >
             <div class="col-lg-6 col-12"></div>
             <div class="col-lg-6 col-12 p-0 form-card">
-                <div class="card shadow">
-                  <div class="card-body">
-                    <h5 class="card-title">Get Instant Quotes</h5>
-                    
-                    <ul class="nav nav-tabs form-active-tab" id="quoteTabs" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="domestic-tab" data-bs-toggle="tab" data-bs-target="#domestic" type="button" role="tab" aria-controls="domestic" aria-selected="true"><i class="fa-sharp-duotone fa-solid fa-truck-fast" style="--fa-primary-color: #95f709; --fa-secondary-color: #95f709;"></i> &nbsp;&nbsp;Domestic</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="international-tab" data-bs-toggle="tab" data-bs-target="#international" type="button" role="tab" aria-controls="international" aria-selected="false"><i class="fa-duotone fa-solid fa-plane" style="--fa-primary-color: #95f709; --fa-secondary-color: #95f709;"></i> &nbsp;&nbsp;International</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="express-tab" data-bs-toggle="tab" data-bs-target="#express" type="button" role="tab" aria-controls="express" aria-selected="false"><i class="fa-duotone fa-solid fa-bolt" style="--fa-primary-color: #95f709; --fa-secondary-color: #95f709;"></i> &nbsp;&nbsp;On-demand</button>
-                      </li>
-                    </ul>
+              <div class="card shadow">
+                <div class="card-body">
+                  <h5 class="card-title">Get Instant Quotes</h5>
 
-                    <div class="tab-content mt-3" id="quoteTabsContent">
-                      <!-- Domestic Form -->
-                      <div class="tab-pane fade show active" id="domestic" role="tabpanel" aria-labelledby="domestic-tab">
-                        <form>
-                          <div class="row d-flex align-items-center">
-                            <div class="col-md-6 col-lg-6 col-12 mb-2">
-                              <label for="pickupLocationDomestic" class="form-label">From:</label>
-                              <select class="form-select form-select-sm" id="deliveryLocationDomestic">
-                                <option selected></option>
-                                <option value="Central">Central</option>
-                                <option value="North">North</option>
-                                <option value="East">East</option>
-                              </select>
-                            </div>
-  
-                            <div class="col-md-6 col-lg-6 col-12 mb-2">
-                              <label for="pickupLocationDomestic" class="form-label">To:</label>
-                              <select class="form-select form-select-sm"  id="deliveryLocationDomestic">
-                                <option selected></option>
-                                <option value="Central">Central</option>
-                                <option value="North">North</option>
-                                <option value="East">East</option>
-                              </select>
-                            </div>
+                  <ul
+                    class="nav nav-tabs form-active-tab"
+                    id="quoteTabs"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="domestic-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#domestic"
+                        type="button"
+                        role="tab"
+                        aria-controls="domestic"
+                        aria-selected="true"
+                      >
+                        <i
+                          class="fa-sharp-duotone fa-solid fa-truck-fast"
+                          style="
+                            --fa-primary-color: #95f709;
+                            --fa-secondary-color: #95f709;
+                          "
+                        ></i>
+                        &nbsp;&nbsp;Domestic
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="international-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#international"
+                        type="button"
+                        role="tab"
+                        aria-controls="international"
+                        aria-selected="false"
+                      >
+                        <i
+                          class="fa-duotone fa-solid fa-plane"
+                          style="
+                            --fa-primary-color: #95f709;
+                            --fa-secondary-color: #95f709;
+                          "
+                        ></i>
+                        &nbsp;&nbsp;International
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="express-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#express"
+                        type="button"
+                        role="tab"
+                        aria-controls="express"
+                        aria-selected="false"
+                      >
+                        <i
+                          class="fa-duotone fa-solid fa-bolt"
+                          style="
+                            --fa-primary-color: #95f709;
+                            --fa-secondary-color: #95f709;
+                          "
+                        ></i>
+                        &nbsp;&nbsp;On-demand
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content mt-3" id="quoteTabsContent">
+                    <!-- Domestic Form -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="domestic"
+                      role="tabpanel"
+                      aria-labelledby="domestic-tab"
+                    >
+                      <form>
+                        <div class="row d-flex align-items-center">
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="pickupLocationDomestic"
+                              class="form-label"
+                              >From:</label
+                            >
+                            <select
+                              class="form-select form-select-sm focus_input"
+                              id="deliveryLocationDomestic"
+                            >
+                              <option selected></option>
+                              <option value="Central">Central</option>
+                              <option value="North">North</option>
+                              <option value="East">East</option>
+                            </select>
                           </div>
-  
-                          <div class="row d-flex align-items-center">
-                            <div class="row m-0 p-0">
-                              <div class="col-md-6 col-lg-6 col-12  py-2" >
-                                <label for="deliveryLocationDomestic" class="form-label">Email:</label>
-                                <div class="input-group">
-                                  <input 
-                                  type="email" 
-                                  class="form-control form-control-sm" 
-                                  id="deliveryLocationDomestic" 
-                                  placeholder="Enter email" 
-                                  aria-label="Email" 
-                                  aria-describedby="email-addon" 
-                                >
+
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="pickupLocationDomestic"
+                              class="form-label"
+                              >To:</label
+                            >
+                            <select
+                              class="form-select form-select-sm focus_input"
+                              id="deliveryLocationDomestic"
+                            >
+                              <option selected></option>
+                              <option value="Central">Central</option>
+                              <option value="North">North</option>
+                              <option value="East">East</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="row d-flex align-items-center">
+                          <div class="row m-0 p-0">
+                            <div class="col-md-6 col-lg-6 col-12 py-2">
+                              <label
+                                for="deliveryLocationDomestic"
+                                class="form-label"
+                                >Email:</label
+                              >
+                              <div class="input-group">
+                                <input
+                                  type="email"
+                                  class="form-control form-control-sm focus_input"
+                                  id="deliveryLocationDomestic"
+                                  placeholder="Enter email"
+                                  aria-label="Email"
+                                  aria-describedby="email-addon"
+                                />
                                 <span class="input-group-text" id="email-addon">
                                   <i class="fa-solid fa-envelope"></i>
                                 </span>
-                                </div>
                               </div>
-                          
-                              <div class="col-md-6 col-lg-6 col-12 py-2">
-                                <label for="deliveryLocationDomesticMobile" class="form-label">Mobile:</label>
-                                <div class="input-group">
-                                  <input 
-                                  type="text" 
-                                  class="form-control form-control-sm" 
-                                  id="deliveryLocationDomesticMobile" 
-                                  placeholder="Enter mobile" 
-                                  aria-label="Mobile" 
-                                  aria-describedby="mobile-addon" 
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-12 py-2">
+                              <label
+                                for="deliveryLocationDomesticMobile"
+                                class="form-label"
+                                >Mobile:</label
+                              >
+                              <div class="input-group">
+                                <input
+                                  type="text"
+                                  class="form-control form-control-sm focus_input"
+                                  id="deliveryLocationDomesticMobile"
+                                  placeholder="Enter mobile"
+                                  aria-label="Mobile"
+                                  aria-describedby="mobile-addon"
+                                />
+                                <span
+                                  class="input-group-text"
+                                  id="mobile-addon"
                                 >
-                                <span class="input-group-text" id="mobile-addon">
                                   <i class="fa-solid fa-phone"></i>
                                 </span>
-                                </div>
-                                
                               </div>
                             </div>
-                          </div> 
-                          
-                          <div class="row d-flex align-items-center">
-                            <div class="row m-0 p-0">
-                              <div class="col-md-6 col-lg-6 col-12 py-2">
-                                <label for="deliveryLocationDomestic" class="form-label">Weight:</label>
-                                <div class="input-group">
-                                  <input 
-                                    type="text" 
-                                    class="form-control form-control-sm" 
-                                    id="deliveryLocationDomestic" 
-                                    placeholder="Enter weight" 
-                                    aria-label="Weight" 
-                                    aria-describedby="weight-addon" 
-                                  >
-                                  <span class="input-group-text" id="weight-addon">
-                                   <i class="fa-solid fa-weight-scale"></i>
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="col-md-6 col-lg-6 col-12" style="padding-top: 2.5rem !important;padding-bottom: 1.5rem !important;">
-                                <button class="btn btn-sm text-light" style="background: #80dc00;"> Get a Quote</button>
-                              </div>    
-                            </div>
                           </div>
-                          
-                          
-                        </form>  
-                      </div>
-                
-                      <!-- International Form -->
-                      <div class="tab-pane fade" id="international" role="tabpanel" aria-labelledby="international-tab">
-                        <form>
-                          <div class="row d-flex align-items-center">
-                            <div class="col-md-6 col-lg-6 col-12 mb-2">
-                              <label for="pickupLocationDomestic" class="form-label">From:</label>
-                              <select class="form-select form-select-sm" id="deliveryLocationDomestic">
-                                <option selected></option>
-                                <option value="Central">Central</option>
-                                <option value="North">North</option>
-                                <option value="East">East</option>
-                              </select>
-                            </div>
-  
-                            <div class="col-md-6 col-lg-6 col-12 mb-2">
-                              <label for="pickupLocationDomestic" class="form-label">To:</label>
-                              <select class="form-select form-select-sm"  id="deliveryLocationDomestic">
-                                <option selected></option>
-                                <option value="Central">Central</option>
-                                <option value="North">North</option>
-                                <option value="East">East</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="row d-flex align-items-center">
-                            <div class="row m-0 p-0">
-                              <div class="col-md-6 col-lg-6 col-12  py-2" >
-                                <label for="deliveryLocationDomestic" class="form-label">Email:</label>
-                                <div class="input-group">
-                                  <input 
-                                  type="email" 
-                                  class="form-control form-control-sm" 
-                                  id="deliveryLocationDomestic" 
-                                  placeholder="Enter email" 
-                                  aria-label="Email" 
-                                  aria-describedby="email-addon" 
+                        </div>
+
+                        <div class="row d-flex align-items-center">
+                          <div class="row m-0 p-0">
+                            <div class="col-md-6 col-lg-6 col-12 py-2">
+                              <label
+                                for="deliveryLocationDomestic"
+                                class="form-label"
+                                >Weight:</label
+                              >
+                              <div class="input-group">
+                                <input
+                                  type="text"
+                                  class="form-control form-control-sm focus_input"
+                                  id="deliveryLocationDomestic"
+                                  placeholder="Enter weight"
+                                  aria-label="Weight"
+                                  aria-describedby="weight-addon"
+                                />
+                                <span
+                                  class="input-group-text"
+                                  id="weight-addon"
                                 >
+                                  <i class="fa-solid fa-weight-scale"></i>
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              class="col-md-6 col-lg-6 col-12"
+                              style="
+                                padding-top: 2.5rem !important;
+                                padding-bottom: 1.5rem !important;
+                              "
+                            >
+                              <button
+                                class="btn btn-sm text-light"
+                                style="background: #80dc00"
+                              >
+                                Get a Quote
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                    <!-- International Form -->
+                    <div
+                      class="tab-pane fade"
+                      id="international"
+                      role="tabpanel"
+                      aria-labelledby="international-tab"
+                    >
+                      <form>
+                        <div class="row d-flex align-items-center">
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="pickupLocationDomestic"
+                              class="form-label"
+                              >From:</label
+                            >
+                            <select
+                              class="form-select form-select-sm focus_input"
+                              id="deliveryLocationDomestic"
+                            >
+                              <option selected></option>
+                              <option value="Central">Central</option>
+                              <option value="North">North</option>
+                              <option value="East">East</option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="pickupLocationDomestic"
+                              class="form-label"
+                              >To:</label
+                            >
+                            <select
+                              class="form-select form-select-sm focus_input"
+                              id="deliveryLocationDomestic"
+                            >
+                              <option selected></option>
+                              <option value="Central">Central</option>
+                              <option value="North">North</option>
+                              <option value="East">East</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="row d-flex align-items-center">
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="deliveryLocationDomestic"
+                              class="form-label"
+                              >Email:</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="email"
+                                class="form-control form-control-sm focus_input"
+                                id="deliveryLocationDomestic"
+                                placeholder="Enter email"
+                                aria-label="Email"
+                                aria-describedby="email-addon"
+                              />
+                              <span class="input-group-text" id="email-addon">
+                                <i class="fa-solid fa-envelope"></i>
+                              </span>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="deliveryLocationDomesticMobile"
+                              class="form-label"
+                              >Mobile:</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control form-control-sm focus_input"
+                                id="deliveryLocationDomesticMobile"
+                                placeholder="Enter mobile"
+                                aria-label="Mobile"
+                                aria-describedby="mobile-addon"
+                              />
+                              <span class="input-group-text" id="mobile-addon">
+                                <i class="fa-solid fa-phone"></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row d-flex align-items-center">
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="deliveryLocationDomestic"
+                              class="form-label"
+                              >Weight:</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control form-control-sm focus_input"
+                                id="deliveryLocationDomestic"
+                                placeholder="Enter weight"
+                                aria-label="Weight"
+                                aria-describedby="weight-addon"
+                              />
+                              <span class="input-group-text" id="weight-addon">
+                                <i class="fa-solid fa-weight-scale"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="pickupLocationDomestic"
+                              class="form-label"
+                              >Country</label
+                            >
+                            <select
+                              class="form-select form-select-sm focus_input"
+                              id="deliveryLocationDomestic"
+                            >
+                              <option selected>Select option</option>
+                              <option value="India">India</option>
+                              <option value="Singapore">Singapore</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-center align-items-center pt-4"
+                        >
+                          <button
+                            class="btn btn-sm text-light"
+                            style="background: #80dc00"
+                          >
+                            Get a Quote
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+
+                    <!-- Express Form -->
+                    <div
+                      class="tab-pane fade"
+                      id="express"
+                      role="tabpanel"
+                      aria-labelledby="express-tab"
+                    >
+                      <form>
+                        <div class="row d-flex align-items-center">
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="pickupLocationDomestic"
+                              class="form-label"
+                              >From:</label
+                            >
+                            <select
+                              class="form-select form-select-sm focus_input"
+                              id="deliveryLocationDomestic"
+                            >
+                              <option selected></option>
+                              <option value="Central">Central</option>
+                              <option value="North">North</option>
+                              <option value="East">East</option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-6 col-lg-6 col-12 mb-2">
+                            <label
+                              for="pickupLocationDomestic"
+                              class="form-label"
+                              >To:</label
+                            >
+                            <select
+                              class="form-select form-select-sm focus_input"
+                              id="deliveryLocationDomestic"
+                            >
+                              <option selected></option>
+                              <option value="Central">Central</option>
+                              <option value="North">North</option>
+                              <option value="East">East</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="row d-flex align-items-center">
+                          <div class="row m-0 p-0">
+                            <div class="col-md-6 col-lg-6 col-12 py-2">
+                              <label
+                                for="deliveryLocationDomestic"
+                                class="form-label"
+                                >Email:</label
+                              >
+                              <div class="input-group">
+                                <input
+                                  type="email"
+                                  class="form-control form-control-sm focus_input"
+                                  id="deliveryLocationDomestic"
+                                  placeholder="Enter email"
+                                  aria-label="Email"
+                                  aria-describedby="email-addon"
+                                />
                                 <span class="input-group-text" id="email-addon">
                                   <i class="fa-solid fa-envelope"></i>
                                 </span>
-                                </div>
                               </div>
-                          
-                              <div class="col-md-6 col-lg-6 col-12 py-2">
-                                <label for="deliveryLocationDomesticMobile" class="form-label">Mobile:</label>
-                                <div class="input-group">
-                                  <input 
-                                  type="text" 
-                                  class="form-control form-control-sm" 
-                                  id="deliveryLocationDomesticMobile" 
-                                  placeholder="Enter mobile" 
-                                  aria-label="Mobile" 
-                                  aria-describedby="mobile-addon" 
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-12 py-2">
+                              <label
+                                for="deliveryLocationDomesticMobile"
+                                class="form-label"
+                                >Mobile:</label
+                              >
+                              <div class="input-group">
+                                <input
+                                  type="text"
+                                  class="form-control form-control-sm focus_input"
+                                  id="deliveryLocationDomesticMobile"
+                                  placeholder="Enter mobile"
+                                  aria-label="Mobile"
+                                  aria-describedby="mobile-addon"
+                                />
+                                <span
+                                  class="input-group-text"
+                                  id="mobile-addon"
                                 >
-                                <span class="input-group-text" id="mobile-addon">
                                   <i class="fa-solid fa-phone"></i>
                                 </span>
-                                </div>
                               </div>
                             </div>
-                          </div> 
-                          
-                          <div class="row d-flex align-items-center">
-                            <div class="row m-0 p-0">
-                              <div class="col-md-6 col-lg-6 col-12 py-2">
-                                <label for="deliveryLocationDomestic" class="form-label">Weight:</label>
-                                <div class="input-group">
-                                  <input 
-                                    type="text" 
-                                    class="form-control form-control-sm" 
-                                    id="deliveryLocationDomestic" 
-                                    placeholder="Enter weight" 
-                                    aria-label="Weight" 
-                                    aria-describedby="weight-addon" 
-                                  >
-                                  <span class="input-group-text" id="weight-addon">
-                                   <i class="fa-solid fa-weight-scale"></i>
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="col-md-6 col-lg-6 col-12" style="padding-top: 2.5rem !important;padding-bottom: 1.5rem !important;">
-                                <button class="btn btn-sm text-light" style="background: #80dc00;"> Get a Quote</button>
-                              </div>    
-                            </div>
                           </div>
-                          
-                          
-                        </form>  
-                      </div>
-                
-                      <!-- Express Form -->
-                      <div class="tab-pane fade" id="express" role="tabpanel" aria-labelledby="express-tab">
-                        <form>
-                          <div class="row d-flex align-items-center">
-                            <div class="col-md-6 col-lg-6 col-12 mb-2">
-                              <label for="pickupLocationDomestic" class="form-label">From:</label>
-                              <select class="form-select form-select-sm" id="deliveryLocationDomestic">
-                                <option selected></option>
-                                <option value="Central">Central</option>
-                                <option value="North">North</option>
-                                <option value="East">East</option>
-                              </select>
-                            </div>
-  
-                            <div class="col-md-6 col-lg-6 col-12 mb-2">
-                              <label for="pickupLocationDomestic" class="form-label">To:</label>
-                              <select class="form-select form-select-sm"  id="deliveryLocationDomestic">
-                                <option selected></option>
-                                <option value="Central">Central</option>
-                                <option value="North">North</option>
-                                <option value="East">East</option>
-                              </select>
-                            </div>
-                          </div>
-  
-                          <div class="row d-flex align-items-center">
-                            <div class="row m-0 p-0">
-                              <div class="col-md-6 col-lg-6 col-12  py-2" >
-                                <label for="deliveryLocationDomestic" class="form-label">Email:</label>
-                                <div class="input-group">
-                                  <input 
-                                  type="email" 
-                                  class="form-control form-control-sm" 
-                                  id="deliveryLocationDomestic" 
-                                  placeholder="Enter email" 
-                                  aria-label="Email" 
-                                  aria-describedby="email-addon" 
+                        </div>
+
+                        <div class="row d-flex align-items-center">
+                          <div class="row m-0 p-0">
+                            <div class="col-md-6 col-lg-6 col-12 py-2">
+                              <label
+                                for="deliveryLocationDomestic"
+                                class="form-label"
+                                >Weight:</label
+                              >
+                              <div class="input-group">
+                                <input
+                                  type="text"
+                                  class="form-control form-control-sm focus_input"
+                                  id="deliveryLocationDomestic"
+                                  placeholder="Enter weight"
+                                  aria-label="Weight"
+                                  aria-describedby="weight-addon"
+                                />
+                                <span
+                                  class="input-group-text"
+                                  id="weight-addon"
                                 >
-                                <span class="input-group-text" id="email-addon">
-                                  <i class="fa-solid fa-envelope"></i>
+                                  <i class="fa-solid fa-weight-scale"></i>
                                 </span>
-                                </div>
-                              </div>
-                          
-                              <div class="col-md-6 col-lg-6 col-12 py-2">
-                                <label for="deliveryLocationDomesticMobile" class="form-label">Mobile:</label>
-                                <div class="input-group">
-                                  <input 
-                                  type="text" 
-                                  class="form-control form-control-sm" 
-                                  id="deliveryLocationDomesticMobile" 
-                                  placeholder="Enter mobile" 
-                                  aria-label="Mobile" 
-                                  aria-describedby="mobile-addon" 
-                                >
-                                <span class="input-group-text" id="mobile-addon">
-                                  <i class="fa-solid fa-phone"></i>
-                                </span>
-                                </div>
-                                
                               </div>
                             </div>
-                          </div> 
-                          
-                          <div class="row d-flex align-items-center">
-                            <div class="row m-0 p-0">
-                              <div class="col-md-6 col-lg-6 col-12 py-2">
-                                <label for="deliveryLocationDomestic" class="form-label">Weight:</label>
-                                <div class="input-group">
-                                  <input 
-                                    type="text" 
-                                    class="form-control form-control-sm" 
-                                    id="deliveryLocationDomestic" 
-                                    placeholder="Enter weight" 
-                                    aria-label="Weight" 
-                                    aria-describedby="weight-addon" 
-                                  >
-                                  <span class="input-group-text" id="weight-addon">
-                                   <i class="fa-solid fa-weight-scale"></i>
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="col-md-6 col-lg-6 col-12" style="padding-top: 2.5rem !important;padding-bottom: 1.5rem !important;">
-                                <button class="btn btn-sm text-light" style="background: #80dc00;"> Get a Quote</button>
-                              </div>    
+                            <div
+                              class="col-md-6 col-lg-6 col-12"
+                              style="
+                                padding-top: 2.5rem !important;
+                                padding-bottom: 1.5rem !important;
+                              "
+                            >
+                              <button
+                                class="btn btn-sm text-light"
+                                style="background: #80dc00"
+                              >
+                                Get a Quote
+                              </button>
                             </div>
                           </div>
-                          
-                          
-                        </form>    
-                      </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
-           </div>
+          </div>
           <img
             src="./assets_in/images/lorry_banner.png"
             alt="trcuklah_india_truck"
@@ -467,361 +666,365 @@
     <section class="moving_section">
       <div class="container">
         <div class="row homeSection-2 bg-image p-4">
-          <div>
-            <div class="row moving_header">
-              <div class="col-md-12 col-12">
-                <ul
-                  class="nav nav-pills moving_pills mx-1 d-flex justify-content-md-start justify-content-center"
-                  id="pills-tab"
-                  role="tablist"
+          <div class="row moving_header">
+            <div class="col-md-12 col-12">
+              <ul
+                class="nav nav-pills moving_pills mx-1 d-flex justify-content-md-start justify-content-center"
+                id="pills-tab"
+                role="tablist"
+              >
+                <div class="homeSection-2_tab">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active p-3"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#item-moving"
+                      type="button"
+                      role="tab"
+                      aria-controls="item-moving"
+                      aria-selected="true"
+                    >
+                      <span class="px-4 mx-1">DISTRICT-DISTRICT</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link p-3"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-house-moving"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-house-moving"
+                      aria-selected="false"
+                    >
+                      STATE-STATE
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link p-3"
+                      id="pills-contact-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-international"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-international"
+                      aria-selected="false"
+                    >
+                      COURIER SERVICE
+                    </button>
+                  </li>
+                </div>
+              </ul>
+
+              <div class="tab-content card shadow-sm" id="pills-tabContent">
+                <!-- Tab 1: DISTRICT TO DISTRICT -->
+                <div
+                  class="tab-pane fade show active ms-4"
+                  id="item-moving"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
                 >
-                  <div class="homeSection-2_tab">
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active p-3"
-                        id="pills-home-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#item-moving"
-                        type="button"
-                        role="tab"
-                        aria-controls="item-moving"
-                        aria-selected="true"
-                      >
-                        <span class="px-4 mx-1">DISTRICT-DISTRICT</span>
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link p-3"
-                        id="pills-profile-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-house-moving"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-house-moving"
-                        aria-selected="false"
-                      >
-                        STATE-STATE
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link p-3"
-                        id="pills-contact-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-international"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-international"
-                        aria-selected="false"
-                      >
-                        COURIER SERVICE
-                      </button>
-                    </li>
+                  <div class="row">
+                    <div class="col-md-7 col-12">
+                      <p class="mb-4 mt-4">
+                        Experience the effortless moving across India to global.
+                        From picking to packing, we handle them all. We strive
+                        to bring smiles to our customers' faces with every
+                        delivery.
+                      </p>
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="fas fa-check tick_green"></i>
+                          <span class="list-text"> Door To Door Delivery </span>
+                        </li>
+                        <li>
+                          <i class="fas fa-check tick_green"></i>
+                          <span class="list-text">
+                            From Packing to tracking, we’ve got it all!
+                          </span>
+                        </li>
+                        <li>
+                          <i class="fas fa-check tick_green"></i>
+                          <span class="list-text">
+                            We offer comprehensive services for both commercial
+                            and residential needs
+                          </span>
+                        </li>
+                        <li>
+                          <i class="fas fa-check tick_green"></i>
+                          <span class="list-text">
+                            District -To-District, State-To-State Services are
+                            Available.
+                          </span>
+                        </li>
+                      </ul>
+                      <div class="d-flex align-items-start mt-4">
+                        <a href="#" class="btn btn_booknow">BOOK NOW</a>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-12">
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="./assets_in/images/item_move_img.webp"
+                          alt="Bg_image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
                   </div>
-                </ul>
+                </div>
 
-                <div class="tab-content card shadow-sm" id="pills-tabContent">
-                  <!-- Tab 1: DISTRICT TO DISTRICT -->
-                  <div
-                    class="tab-pane fade show active ms-4"
-                    id="item-moving"
-                    role="tabpanel"
-                    aria-labelledby="pills-home-tab"
-                  >
-                    <div class="row">
-                      <div class="col-md-7 col-12">
-                        <p class="mb-4 mt-4">
-                          Experience the effortless moving across India to
-                          global. From picking to packing, we handle them all.
-                          We strive to bring smiles to our customers' faces with
-                          every delivery.
-                        </p>
-                        <ul class="list-unstyled">
-                          <li>
-                            <i class="fas fa-check tick_green"></i>
-                            <span class="list-text">
-                              Door To Door Delivery
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fas fa-check tick_green"></i>
-                            <span class="list-text">
-                              From Packing to tracking, we’ve got it all!
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fas fa-check tick_green"></i>
-                            <span class="list-text">
-                              We offer comprehensive services for both
-                              commercial and residential needs
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fas fa-check tick_green"></i>
-                            <span class="list-text">
-                              District -To-District, State-To-State Services are
-                              Available.
-                            </span>
-                          </li>
-                        </ul>
-                        <div class="d-flex align-items-start mt-4">
-                          <a href="#" class="btn btn_booknow">BOOK NOW</a>
+                <!-- Tab 2: STATE TO STATE -->
+                <div
+                  class="tab-pane fade ms-4"
+                  id="pills-house-moving"
+                  role="tabpane2"
+                  aria-labelledby="pills-profile-tab"
+                >
+                  <div class="row">
+                    <div class="col-md-7 col-12">
+                      <p class="mb-4 mt-4">
+                        House relocation simplified in India. Make your move
+                        with our expertise. Providing ultimate peace of mind, we
+                        transport your belongings safely and efficiently.
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="">
+                          <i class="fas fa-check tick_green"></i>
+                          <span class="list-text">
+                            Easy Bookings and scheduling
+                          </span>
+                        </li>
+                        <li>
+                          <i class="fas fa-check tick_green"></i>
+                          <span class="list-text">
+                            We offer end-to-end moving solutions
+                          </span>
+                        </li>
+                        <li>
+                          <i class="fas fa-check tick_green"></i>
+                          <span class="list-text"> Flexible Timings </span>
+                        </li>
+                        <li>
+                          <i class="fas fa-check tick_green"></i>
+                          <span class="list-text">
+                            District -To-District, State-To-State Services are
+                            Available.
+                          </span>
+                        </li>
+                      </ul>
+                      <div class="d-flex align-items-start mt-4">
+                        <a href="#" class="btn btn_booknow">BOOK NOW</a>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-12">
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="./assets_in/images/HOUSE_MOVING.webp"
+                          alt="Bg_image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tab 3: Courier Service -->
+                <div
+                  class="tab-pane fade ms-4"
+                  id="pills-international"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                >
+                  <!-- Secondary Tab Navigation for Courier Service -->
+                  <div class="homeSection-3">
+                    <div class="homeSection-3_tab">
+                      <ul
+                        class="nav nav-pills moving_pills mx-1 d-flex justify-content-md-start justify-content-center py-2"
+                        id="pills-tab"
+                        role="tablist"
+                      >
+                        <li class="nav-item">
+                          <button
+                            class="nav-link active"
+                            id="courier-domestic-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#courier-domestic"
+                            type="button"
+                            role="tab"
+                            aria-controls="courier-domestic"
+                            aria-selected="true"
+                          >
+                            <span class="px-4 mx-1"> Domestic </span>
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button
+                            class="nav-link"
+                            id="courier-international-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#courier-international"
+                            type="button"
+                            role="tab"
+                            aria-controls="courier-international"
+                            aria-selected="false"
+                          >
+                            International
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Secondary Tab Content -->
+                  <div class="tab-content mt-3" id="courier-tabContent">
+                    <!-- Domestic Courier Content -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="courier-domestic"
+                      role="tabpanel"
+                      aria-labelledby="courier-domestic-tab"
+                    >
+                      <div class="row">
+                        <div class="col-md-7 col-12">
+                          <p class="mb-4 mt-4">
+                            Love has no boundaries! Send your loved one’s
+                            gift/goods across the globe. You don’t have to
+                            worry, from customs clearance to insurance coverage,
+                            we will handle them all.
+                          </p>
+                          <ul class="list-unstyled">
+                            <li class="">
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text"
+                                >Expert in International Moving Regulations Help
+                                with packing and manpower assistance.
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                Expert in International Moving Regulations
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                Packing and Unpacking Services
+                              </span>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                Convenient Air/Sea shipping
+                              </span>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                Transparent Pricing
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text"
+                                >Excellent Customer Service
+                              </span>
+                            </li>
+                          </ul>
+                          <div class="d-flex align-items-start mt-4">
+                            <a href="#" class="btn btn_booknow">BOOK NOW</a>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-12">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="./assets_in/images/item_move_img.webp"
+                              alt="Bg_image"
+                              class="img-fluid"
+                            />
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-5 col-12">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            src="./assets_in/images/item_move_img.webp"
-                            alt="Bg_image"
-                            class="img-fluid"
-                          />
+                    </div>
+                    <!-- International Courier Content -->
+                    <div
+                      class="tab-pane fade"
+                      id="courier-international"
+                      role="tabpanel"
+                      aria-labelledby="courier-international-tab"
+                    >
+                      <div class="row">
+                        <div class="col-md-7 col-12">
+                          <p class="mb-4 mt-4">
+                            Love has no boundaries! Send your loved one’s
+                            gift/goods across the globe. You don’t have to
+                            worry, from customs clearance to insurance coverage,
+                            we will handle them all.
+                          </p>
+                          <ul class="list-unstyled">
+                            <li class="">
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text"
+                                >Expert in International Moving Regulations Help
+                                with packing and manpower assistance.
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                Expert in International Moving Regulations
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                Packing and Unpacking Services
+                              </span>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                Convenient Air/Sea shipping
+                              </span>
+                            </li>
+
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                Transparent Pricing
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text"
+                                >Excellent Customer Service
+                              </span>
+                            </li>
+                          </ul>
+                          <div class="d-flex align-items-start mt-4">
+                            <a href="#" class="btn btn_booknow">BOOK NOW</a>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-12">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="./assets_in/images/item_move_img.webp"
+                              alt="Bg_image"
+                              class="img-fluid"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <!-- Tab 2: STATE TO STATE -->
-                  <div
-                    class="tab-pane fade ms-4"
-                    id="pills-house-moving"
-                    role="tabpane2"
-                    aria-labelledby="pills-profile-tab"
-                  >
-                    <div class="row">
-                      <div class="col-md-7 col-12">
-                        <p class="mb-4 mt-4">
-                          House relocation simplified in India. Make your move
-                          with our expertise. Providing ultimate peace of mind,
-                          we transport your belongings safely and efficiently.
-                        </p>
-                        <ul class="list-unstyled">
-                          <li class="">
-                            <i class="fas fa-check tick_green"></i>
-                            <span class="list-text">
-                              Easy Bookings and scheduling
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fas fa-check tick_green"></i>
-                            <span class="list-text">
-                              We offer end-to-end moving solutions
-                            </span>
-                          </li>
-                          <li>
-                            <i class="fas fa-check tick_green"></i>
-                            <span class="list-text"> Flexible Timings </span>
-                          </li>
-                          <li>
-                            <i class="fas fa-check tick_green"></i>
-                            <span class="list-text">
-                              District -To-District, State-To-State Services are
-                              Available.
-                            </span>
-                          </li>
-                        </ul>
-                        <div class="d-flex align-items-start mt-4">
-                          <a href="#" class="btn btn_booknow">BOOK NOW</a>
-                        </div>
-                      </div>
-                      <div class="col-md-5 col-12">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            src="./assets_in/images/HOUSE_MOVING.webp"
-                            alt="Bg_image"
-                            class="img-fluid"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                 <!-- Tab 3: Courier Service -->
-  <div
-  class="tab-pane fade ms-4"
-  id="pills-international"
-  role="tabpanel"
-  aria-labelledby="pills-contact-tab"
->
-  <!-- Secondary Tab Navigation for Courier Service -->
-   <div class="homeSection-3">
-  <div class="homeSection-3_tab">
-    <ul
-    class="nav nav-pills moving_pills mx-1 d-flex justify-content-md-start justify-content-center py-2"
-    id="pills-tab"
-    role="tablist"
-  >
-    <li class="nav-item">
-      <button
-        class="nav-link active"
-        id="courier-domestic-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#courier-domestic"
-        type="button"
-        role="tab"
-        aria-controls="courier-domestic"
-        aria-selected="true"
-      >
-      <span class="px-4 mx-1"> Domestic </span>
-      </button>
-    </li>
-    <li class="nav-item">
-      <button
-        class="nav-link"
-        id="courier-international-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#courier-international"
-        type="button"
-        role="tab"
-        aria-controls="courier-international"
-        aria-selected="false"
-      >
-        International
-      </button>
-    </li>
-  </ul>
-</div>
-</div>
-
-  <!-- Secondary Tab Content -->
-  <div class="tab-content mt-3" id="courier-tabContent">
-    <!-- Domestic Courier Content -->
-    <div
-      class="tab-pane fade show active"
-      id="courier-domestic"
-      role="tabpanel"
-      aria-labelledby="courier-domestic-tab"
-    >
-    <div class="row">
-      <div class="col-md-7 col-12">
-        <p class="mb-4 mt-4">
-          Love has no boundaries! Send your loved one’s
-          gift/goods across the globe. You don’t have to worry,
-          from customs clearance to insurance coverage, we will
-          handle them all.
-        </p>
-        <ul class="list-unstyled">
-          <li class="">
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text"
-              >Expert in International Moving Regulations Help
-              with packing and manpower assistance.
-            </span>
-          </li>
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text">
-              Expert in International Moving Regulations
-            </span>
-          </li>
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text">
-              Packing and Unpacking Services
-            </span>
-          </li>
-
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text">
-              Convenient Air/Sea shipping
-            </span>
-          </li>
-
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text"> Transparent Pricing </span>
-          </li>
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text"
-              >Excellent Customer Service
-            </span>
-          </li>
-        </ul>
-        <div class="d-flex align-items-start mt-4">
-          <a href="#" class="btn btn_booknow">BOOK NOW</a>
-        </div>
-    </div>
-    <div class="col-md-5 col-12">
-      <div class="d-flex justify-content-center">
-        <img
-          src="./assets_in/images/item_move_img.webp"
-          alt="Bg_image"
-          class="img-fluid"
-        />
-      </div>
-    </div>
-
                 </div>
-                </div>
-                <!-- International Courier Content -->
-      <div
-      class="tab-pane fade"
-      id="courier-international"
-      role="tabpanel"
-      aria-labelledby="courier-international-tab"
-    >
-    <div class="row">
-      <div class="col-md-7 col-12">
-        <p class="mb-4 mt-4">
-          Love has no boundaries! Send your loved one’s
-          gift/goods across the globe. You don’t have to worry,
-          from customs clearance to insurance coverage, we will
-          handle them all.
-        </p>
-        <ul class="list-unstyled">
-          <li class="">
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text"
-              >Expert in International Moving Regulations Help
-              with packing and manpower assistance.
-            </span>
-          </li>
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text">
-              Expert in International Moving Regulations
-            </span>
-          </li>
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text">
-              Packing and Unpacking Services
-            </span>
-          </li>
-
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text">
-              Convenient Air/Sea shipping
-            </span>
-          </li>
-
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text"> Transparent Pricing </span>
-          </li>
-          <li>
-            <i class="fas fa-check tick_green"></i>
-            <span class="list-text"
-              >Excellent Customer Service
-            </span>
-          </li>
-        </ul>
-        <div class="d-flex align-items-start mt-4">
-          <a href="#" class="btn btn_booknow">BOOK NOW</a>
-        </div>
-    </div>
-    <div class="col-md-5 col-12">
-      <div class="d-flex justify-content-center">
-        <img
-          src="./assets_in/images/item_move_img.webp"
-          alt="Bg_image"
-          class="img-fluid"
-        />
-      </div>
-    </div>
               </div>
             </div>
           </div>
