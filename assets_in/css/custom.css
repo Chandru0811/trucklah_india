@@ -183,12 +183,15 @@
   }
 
   .sub_heading {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
+  }
+  .size_dhl {
+    width: 75px !important;
   }
 
   .additional_heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     padding-top: 1rem;
   }
@@ -1206,9 +1209,14 @@ button.accordion-button:not(.collapsed)::after {
   font-weight: 500;
   font-size: 22px;
   background: #e2e2e4;
-  border: none;
   padding: 0 !important;
+  border: none;
   border-radius: 0 5px 5px 5px;
+}
+
+.roll_btn {
+  display: flex;
+  justify-content: center;
 }
 
 .tab-content {
@@ -1274,7 +1282,7 @@ button.accordion-button:not(.collapsed)::after {
   position: relative;
   left: 8rem;
   top: -13rem;
-  height: 10px;
+  height: 1px;
   margin: 0;
 }
 .form-active-tab .nav-link {
@@ -1312,5 +1320,23 @@ button.accordion-button:not(.collapsed)::after {
     margin: 0 20px !important;
     max-width: fit-content;
     text-align: center;
+  }
+}
+
+.line_hg {
+  line-height: 2.8rem !important;
+}
+
+.side_card_heading {
+  color: #76ce00 !important;
+}
+
+@media screen and (max-width: 450px) {
+  .side_card_heading {
+    padding: 0 5px !important;
+    font-size: 15px !important;
+  }
+  .form-card {
+    margin: 0 !important;
   }
 }
