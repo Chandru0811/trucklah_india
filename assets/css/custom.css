@@ -623,7 +623,7 @@ hr {
 
 .contact_form {
   position: relative;
-  top: -140px;
+  top: -110px;
 }
 
 @media screen and (max-width: 786px) {
@@ -1340,3 +1340,149 @@ button.accordion-button:not(.collapsed)::after {
     margin: 0 !important;
   }
 }
+
+/* Contact Us Start */
+
+.nav-tabs .nav-link.active {
+  background-color: white !important;
+}
+.nav-tabs .nav-link:hover {
+  background-color: white !important;
+}
+
+.nav-tabs.nav-link {
+  color: #000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  padding: 5px;
+}
+
+.contact-nav:hover {
+  background-color: #fff;
+}
+
+.address-content {
+  display: none;
+  padding-top: 16px;
+}
+.active-address {
+  display: block;
+  padding-top: 16px;
+}
+
+.nav-tabs .contact-nav.active {
+  background-color: #fff !important;
+}
+
+.nav-tabs .contact-nav {
+  margin-bottom: 0px;
+}
+
+.mediaIconBgIcon {
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 14px;
+  /* width: 40px;
+  height: 40px; */
+  background: #acff3b;
+}
+
+.mediaIconBgIcon:hover {
+  background: #acff3b;
+}
+
+.socialicons a {
+  padding: 0;
+}
+
+.mediaIconBgIcon {
+  width: 50px;
+  height: 50px;
+  background-color: #acff3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  margin: 5px;
+}
+
+.soc_icons {
+  font-size: 24px;
+  color: #000;
+}
+
+@media (max-width: 320px) {
+  .socialicons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .socialicons a:nth-child(1),
+  .socialicons a:nth-child(4) {
+    grid-column: 1;
+  }
+
+  .socialicons a:nth-child(2),
+  .socialicons a:nth-child(5) {
+    grid-column: 2;
+  }
+
+  .socialicons a:nth-child(3) {
+    grid-column: 3;
+  }
+}
+
+.borderline {
+  border-left: 1px solid #4f4f4f;
+}
+
+@media (max-width: 767px) {
+  .borderline {
+    border-left: none !important;
+  }
+}
+
+.contact-heading {
+  font-family: "Marcellus";
+  font-size: 2em;
+}
+
+.contact-icon-group {
+  background-color: #fff;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.icon-color {
+  color: gray !important;
+}
+
+.contact-button {
+  background-color: #acff3b;
+  border-color: #acff3b;
+  padding: 12px 45px !important;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #333;
+}
+
+.contact-button:hover {
+  border: 1px solid #333;
+  background-color: #333 !important;
+  color: #acff3b !important;
+  padding: 12px 45px !important;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.contact-subheading {
+  font-family: "Marcellus" !important;
+}
+
+.contact-subheading2 {
+  font-family: "Marcellus" !important;
+  color: #acff3b;
+}
+/* Contact Us End */
