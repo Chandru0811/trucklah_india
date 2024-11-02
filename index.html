@@ -260,37 +260,33 @@
                       role="tabpanel"
                       aria-labelledby="domestic-tab"
                     >
-                      <form>
+                      <form id="instantquotes_domestic">
                         <div class="row d-flex align-items-center">
                           <div
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
-                            <label
-                              for="pickupLocationDomestic"
-                              class="form-label"
+                            <label for="instantquotes_from" class="form-label"
                               >From:</label
                             >
                             <input
                               class="form-control form-control-sm focus_input"
-                              id="deliveryLocationDomestic"
+                              id="instantquotes_from"
+                              name="instantquotes_from"
                               type="text"
-                              placeholder="From"
                             />
                           </div>
 
                           <div
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
-                            <label
-                              for="pickupLocationDomestic"
-                              class="form-label"
+                            <label for="instantquotes_to" class="form-label"
                               >To:</label
                             >
                             <input
                               class="form-control form-control-sm focus_input"
-                              id="deliveryLocationDomestic"
+                              id="instantquotes_to"
+                              name="instantquotes_to"
                               type="text"
-                              placeholder="To"
                             />
                           </div>
                         </div>
@@ -299,19 +295,19 @@
                           <div
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
-                            <label
-                              for="deliveryLocationDomestic"
-                              class="form-label"
+                            <label for="instantquotes_email1" class="form-label"
                               >Email:</label
                             >
                             <div class="input-group">
                               <input
                                 type="email"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomestic"
+                                id="instantquotes_email1"
+                                name="instantquotes_email1"
                                 placeholder="Enter email"
                                 aria-label="Email"
                                 aria-describedby="email-addon"
+                                required
                               />
                               <span class="input-group-text" id="email-addon">
                                 <i class="fa-solid fa-envelope"></i>
@@ -322,16 +318,15 @@
                           <div
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
-                            <label
-                              for="deliveryLocationDomesticMobile"
-                              class="form-label"
+                            <label for="instantquotes_mobile" class="form-label"
                               >Mobile:</label
                             >
                             <div class="input-group">
                               <input
                                 type="text"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomesticMobile"
+                                id="instantquotes_mobile"
+                                name="instantquotes_mobile"
                                 placeholder="Enter mobile"
                                 aria-label="Mobile"
                                 aria-describedby="mobile-addon"
@@ -348,7 +343,7 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="deliveryLocationDomestic"
+                              for="instantquotes_description"
                               class="form-label"
                               >Weight:</label
                             >
@@ -356,8 +351,9 @@
                               <input
                                 type="text"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomestic"
-                                placeholder="Enter weight"
+                                id="instantquotes_description"
+                                name="instantquotes_description"
+                                placeholder="Kg"
                                 aria-label="Weight"
                                 aria-describedby="weight-addon"
                               />
@@ -365,6 +361,23 @@
                                 <i class="fa-solid fa-weight-scale"></i>
                               </span>
                             </div>
+                          </div>
+                          <div
+                            class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                          >
+                            <label for="instantquotes_date" class="form-label"
+                              >Date:</label
+                            >
+                            <input
+                              type="date"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_date"
+                              name="instantquotes_date"
+                              placeholder="Kg"
+                              aria-label="Weight"
+                              aria-describedby="weight-addon"
+                              required
+                            />
                           </div>
                         </div>
 
@@ -388,21 +401,21 @@
                       role="tabpanel"
                       aria-labelledby="international-tab"
                     >
-                      <form>
+                      <form id="instantquotes_international">
                         <div class="row d-flex align-items-center">
                           <div
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="pickupLocationDomestic"
+                              for="instantquotes_from_inter"
                               class="form-label"
                               >From:</label
                             >
                             <input
                               class="form-control form-control-sm focus_input"
-                              id="deliveryLocationDomestic"
+                              id="instantquotes_from_inter"
+                              name="instantquotes_from_inter"
                               type="text"
-                              placeholder="From"
                             />
                           </div>
 
@@ -410,15 +423,15 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="pickupLocationDomestic"
+                              for="instantquotes_to_inter"
                               class="form-label"
                               >To:</label
                             >
                             <input
                               class="form-control form-control-sm focus_input"
-                              id="deliveryLocationDomestic"
+                              id="instantquotes_to_inter"
+                              name="instantquotes_to_inter"
                               type="text"
-                              placeholder="To"
                             />
                           </div>
                         </div>
@@ -428,7 +441,7 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="deliveryLocationDomestic"
+                              for="instantquotes_email_inter"
                               class="form-label"
                               >Email:</label
                             >
@@ -436,10 +449,12 @@
                               <input
                                 type="email"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomestic"
+                                id="instantquotes_email_inter"
+                                name="instantquotes_email_inter"
                                 placeholder="Enter email"
                                 aria-label="Email"
                                 aria-describedby="email-addon"
+                                required
                               />
                               <span class="input-group-text" id="email-addon">
                                 <i class="fa-solid fa-envelope"></i>
@@ -451,7 +466,7 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="deliveryLocationDomesticMobile"
+                              for="instantquotes_mobile_inter"
                               class="form-label"
                               >Mobile:</label
                             >
@@ -459,7 +474,8 @@
                               <input
                                 type="text"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomesticMobile"
+                                id="instantquotes_mobile_inter"
+                                name="instantquotes_mobile_inter"
                                 placeholder="Enter mobile"
                                 aria-label="Mobile"
                                 aria-describedby="mobile-addon"
@@ -476,7 +492,7 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="deliveryLocationDomestic"
+                              for="instantquotes_description_inter"
                               class="form-label"
                               >Weight:</label
                             >
@@ -484,8 +500,9 @@
                               <input
                                 type="text"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomestic"
-                                placeholder="Enter weight"
+                                id="instantquotes_description_inter"
+                                name="instantquotes_description_inter"
+                                placeholder="Kg"
                                 aria-label="Weight"
                                 aria-describedby="weight-addon"
                               />
@@ -493,6 +510,25 @@
                                 <i class="fa-solid fa-weight-scale"></i>
                               </span>
                             </div>
+                          </div>
+                          <div
+                            class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                          >
+                            <label
+                              for="instantquotes_date_inter"
+                              class="form-label"
+                              >Date:</label
+                            >
+                            <input
+                              type="date"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_date_inter"
+                              name="instantquotes_date_inter"
+                              placeholder="Kg"
+                              aria-label="Weight"
+                              aria-describedby="weight-addon"
+                              required
+                            />
                           </div>
                         </div>
 
@@ -516,21 +552,21 @@
                       role="tabpanel"
                       aria-labelledby="express-tab"
                     >
-                      <form>
+                      <form id="instantquotes_ondemond">
                         <div class="row d-flex align-items-center">
                           <div
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="pickupLocationDomestic"
+                              for="instantquotes_from_demond"
                               class="form-label"
                               >From:</label
                             >
                             <input
                               class="form-control form-control-sm focus_input"
-                              id="deliveryLocationDomestic"
+                              id="instantquotes_from_demond"
+                              name="instantquotes_from_demond"
                               type="text"
-                              placeholder="From"
                             />
                           </div>
 
@@ -538,15 +574,15 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="pickupLocationDomestic"
+                              for="instantquotes_to_demond"
                               class="form-label"
                               >To:</label
                             >
                             <input
                               class="form-control form-control-sm focus_input"
-                              id="deliveryLocationDomestic"
+                              id="instantquotes_to_demond"
+                              name="instantquotes_to_demond"
                               type="text"
-                              placeholder="To"
                             />
                           </div>
                         </div>
@@ -556,7 +592,7 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="deliveryLocationDomestic"
+                              for="instantquotes_email_demond"
                               class="form-label"
                               >Email:</label
                             >
@@ -564,10 +600,12 @@
                               <input
                                 type="email"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomestic"
+                                id="instantquotes_email_demond"
+                                name="instantquotes_email_demond"
                                 placeholder="Enter email"
                                 aria-label="Email"
                                 aria-describedby="email-addon"
+                                required
                               />
                               <span class="input-group-text" id="email-addon">
                                 <i class="fa-solid fa-envelope"></i>
@@ -579,7 +617,7 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="deliveryLocationDomesticMobile"
+                              for="instantquotes_mobile_demond"
                               class="form-label"
                               >Mobile:</label
                             >
@@ -587,7 +625,8 @@
                               <input
                                 type="text"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomesticMobile"
+                                id="instantquotes_mobile_demond"
+                                name="instantquotes_mobile_demond"
                                 placeholder="Enter mobile"
                                 aria-label="Mobile"
                                 aria-describedby="mobile-addon"
@@ -604,7 +643,7 @@
                             class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
                           >
                             <label
-                              for="deliveryLocationDomestic"
+                              for="instantquotes_description_demond"
                               class="form-label"
                               >Weight:</label
                             >
@@ -612,8 +651,9 @@
                               <input
                                 type="text"
                                 class="form-control form-control-sm focus_input"
-                                id="deliveryLocationDomestic"
-                                placeholder="Enter weight"
+                                id="instantquotes_description_demond"
+                                name="instantquotes_description_demond"
+                                placeholder="Kg"
                                 aria-label="Weight"
                                 aria-describedby="weight-addon"
                               />
@@ -621,6 +661,25 @@
                                 <i class="fa-solid fa-weight-scale"></i>
                               </span>
                             </div>
+                          </div>
+                          <div
+                            class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                          >
+                            <label
+                              for="instantquotes_date_demond"
+                              class="form-label"
+                              >Date:</label
+                            >
+                            <input
+                              type="date"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_date_demond"
+                              name="instantquotes_date_demond"
+                              placeholder="Kg"
+                              aria-label="Weight"
+                              aria-describedby="weight-addon"
+                              required
+                            />
                           </div>
                         </div>
 
@@ -861,7 +920,7 @@
                             aria-controls="courier-international"
                             aria-selected="false"
                           >
-                            International
+                            <span class="px-4 mx-1"> International </span>
                           </button>
                         </li>
                       </ul>
@@ -880,49 +939,62 @@
                       <div class="row">
                         <div class="col-md-7 col-12">
                           <p class="my-4 p-0">
-                            Love has no boundaries! Send your loved one’s
-                            gift/goods across the globe. You don’t have to
-                            worry, from customs clearance to insurance coverage,
-                            we will handle them all.
+                            Conquer distance with ease. From the misty hills of
+                            Himachal to the sunny plains of Tamil Nadu, we're
+                            here for you. We offer seamless moves across India.
+                            From residential moves to commercial moves, from
+                            gifts to heavy machinery, we've got you covered. Our
+                            nationwide network, ensures swift and safe
+                            deliveries each and every time. Make your move right
+                            now!
                           </p>
                           <ul class="list-unstyled">
                             <li class="">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text"
-                                >Expert in International Moving Regulations Help
-                                with packing and manpower assistance.
+                                >Proud partner of DHL
                               </span>
                             </li>
                             <li class="line_hg">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text">
-                                Expert in International Moving Regulations
+                                Wide network across India
                               </span>
                             </li>
                             <li class="line_hg">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text">
-                                Packing and Unpacking Services
-                              </span>
-                            </li>
-
-                            <li class="line_hg">
-                              <i class="fas fa-check tick_green"></i>
-                              <span class="list-text">
-                                Convenient Air/Sea shipping
+                                Door To Door Service
                               </span>
                             </li>
 
                             <li class="line_hg">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text">
-                                Transparent Pricing
+                                Competitive Pricing
+                              </span>
+                            </li>
+
+                            <li class="line_hg">
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                District To District Service
                               </span>
                             </li>
                             <li class="line_hg">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text"
-                                >Excellent Customer Service
+                                >State To State Service
+                              </span>
+                            </li>
+                            <li class="line_hg">
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">Dynamic Tracking </span>
+                            </li>
+                            <li class="line_hg">
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text"
+                                >Customer-Centric Approach
                               </span>
                             </li>
                           </ul>
@@ -951,49 +1023,62 @@
                       <div class="row">
                         <div class="col-md-7 col-12">
                           <p class="my-4 p-0">
-                            Love has no boundaries! Send your loved one’s
-                            gift/goods across the globe. You don’t have to
-                            worry, from customs clearance to insurance coverage,
-                            we will handle them all.
+                            Conquer distance with ease. From the misty hills of
+                            Himachal to the sunny plains of Tamil Nadu, we're
+                            here for you. We offer seamless moves across India.
+                            From residential moves to commercial moves, from
+                            gifts to heavy machinery, we've got you covered. Our
+                            nationwide network, ensures swift and safe
+                            deliveries each and every time. Make your move right
+                            now!
                           </p>
                           <ul class="list-unstyled">
                             <li class="">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text"
-                                >Expert in International Moving Regulations Help
-                                with packing and manpower assistance.
+                                >Proud partner of DHL
                               </span>
                             </li>
                             <li class="line_hg">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text">
-                                Expert in International Moving Regulations
+                                Wide network across India
                               </span>
                             </li>
                             <li class="line_hg">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text">
-                                Packing and Unpacking Services
-                              </span>
-                            </li>
-
-                            <li class="line_hg">
-                              <i class="fas fa-check tick_green"></i>
-                              <span class="list-text">
-                                Convenient Air/Sea shipping
+                                Door To Door Service
                               </span>
                             </li>
 
                             <li class="line_hg">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text">
-                                Transparent Pricing
+                                Competitive Pricing
+                              </span>
+                            </li>
+
+                            <li class="line_hg">
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">
+                                District To District Service
                               </span>
                             </li>
                             <li class="line_hg">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text"
-                                >Excellent Customer Service
+                                >State To State Service
+                              </span>
+                            </li>
+                            <li class="line_hg">
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text">Dynamic Tracking </span>
+                            </li>
+                            <li class="line_hg">
+                              <i class="fas fa-check tick_green"></i>
+                              <span class="list-text"
+                                >Customer-Centric Approach
                               </span>
                             </li>
                           </ul>
@@ -1001,7 +1086,7 @@
                             <a href="#" class="btn btn_booknow">BOOK NOW</a>
                           </div>
                         </div>
-                        <div class="col-md-5 col-12">
+                        <div class="col-md-5 col-12 d-flex align-items-end">
                           <div class="d-flex justify-content-center">
                             <img
                               src="./assets/images/item_move_img.webp"
@@ -1566,7 +1651,7 @@
               </div>
               <div class="links2">
                 <a
-                  href="#"
+                  href="./contactus.html"
                   rel="noopener noreferrer"
                   class="text-decoration-none"
                   >Contact Us</a
