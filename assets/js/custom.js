@@ -113,6 +113,8 @@ $(document).ready(function () {
       },
       instantquotes_description: {
         required: true,
+        number: true, // Ensures the value is a valid number
+        min: 0.1, // Ensures the value is greater than 0
       },
     },
     messages: {
@@ -133,7 +135,9 @@ $(document).ready(function () {
         maxlength: "Phone number can't exceed 10 digits",
       },
       instantquotes_description: {
-        required: "Please enter your message",
+        required: "Please enter the weight",
+        number: "Please enter a valid number",
+        min: "Weight must be greater than 0",
       },
     },
 
@@ -216,6 +220,8 @@ $(document).ready(function () {
       },
       instantquotes_description_inter: {
         required: true,
+        number: true, // Ensures the value is a valid number
+        min: 0.1, // Ensures the value is greater than 0
       },
     },
     messages: {
@@ -236,7 +242,9 @@ $(document).ready(function () {
         maxlength: "Phone number can't exceed 10 digits",
       },
       instantquotes_description_inter: {
-        required: "Please enter your message",
+        required: "Please enter the weight",
+        number: "Please enter a valid number",
+        min: "Weight must be greater than 0",
       },
     },
 
@@ -318,6 +326,8 @@ $(document).ready(function () {
       },
       instantquotes_description_demond: {
         required: true,
+        number: true, // Ensures the value is a valid number
+        min: 0.1, // Ensures the value is greater than 0
       },
     },
     messages: {
@@ -339,6 +349,8 @@ $(document).ready(function () {
       },
       instantquotes_description_demond: {
         required: "Please enter your message",
+        number: "Please enter a valid number",
+        min: "Weight must be greater than 0",
       },
     },
 
