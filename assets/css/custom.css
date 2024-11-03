@@ -1444,7 +1444,6 @@ button.accordion-button:not(.collapsed)::after {
 }
 
 .contact-heading {
-  font-family: "Marcellus";
   font-size: 2em;
 }
 
@@ -1477,12 +1476,9 @@ button.accordion-button:not(.collapsed)::after {
   margin-top: 10px;
 }
 
-.contact-subheading {
-  font-family: "Marcellus" !important;
-}
+
 
 .contact-subheading2 {
-  font-family: "Marcellus" !important;
   color: #acff3b;
 }
 /* Contact Us End */
