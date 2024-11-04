@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trucklah - Moving Made Easy between India and Sinagapore</title>
 
-    <link rel="icon" href="./assets/images/favicon.ico" />
+    <link rel="icon" href="./assets/images/favicon.svg" />
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -85,7 +85,10 @@
               id="default-search"
             >
               <li class="nav-item header-menu">
-                <a class="nav-link header_fw active" aria-current="page" href="#"
+                <a
+                  class="nav-link header_fw active"
+                  aria-current="page"
+                  href="#"
                   >DISTRICT-DISTRICT</a
                 >
               </li>
@@ -98,7 +101,6 @@
                   href="#"
                   id="navbarDropdown"
                   role="button"
-                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   COURIER SERVICE
@@ -752,7 +754,7 @@
     <section class="moving_section">
       <div class="container">
         <div class="row homeSection-2 bg-image p-4">
-          <div class="row moving_header">
+          <div class="moving_header">
             <div class="col-md-12 col-12">
               <ul
                 class="nav nav-pills moving_pills mx-1 d-flex justify-content-md-start justify-content-center"
@@ -814,14 +816,13 @@
                   aria-labelledby="pills-home-tab"
                 >
                   <div class="row">
+                    <p class="my-4 pe-5">
+                      Experience the effortless moving across India to global.
+                      From picking to packing, we handle them all. We strive to
+                      bring smiles to our customers' faces with every delivery.
+                    </p>
                     <div class="col-md-7 col-12">
-                      <p class="my-4">
-                        Experience the effortless moving across India to global.
-                        From picking to packing, we handle them all. We strive
-                        to bring smiles to our customers' faces with every
-                        delivery.
-                      </p>
-                      <ul class="list-unstyled">
+                      <ul class="list-unstyled" style="padding: 0 15px 0 0">
                         <li class="line_hg">
                           <i class="fas fa-check tick_green"></i>
                           <span class="list-text"> Door To Door Delivery </span>
@@ -872,12 +873,12 @@
                 >
                   <div class="row">
                     <div class="col-md-7 col-12">
-                      <p class="my-4">
+                      <p class="my-4" style="padding: 0 15px 0 0">
                         House relocation simplified in India. Make your move
                         with our expertise. Providing ultimate peace of mind, we
                         transport your belongings safely and efficiently.
                       </p>
-                      <ul class="list-unstyled">
+                      <ul class="list-unstyled" style="padding: 0 15px 0 0">
                         <li class="line_hg">
                           <i class="fas fa-check tick_green"></i>
                           <span class="list-text">
@@ -920,7 +921,7 @@
 
                 <!-- Tab 3: Courier Service -->
                 <div
-                  class="tab-pane fade ms-4"
+                  class="tab-pane fade"
                   id="pills-international"
                   role="tabpanel"
                   aria-labelledby="pills-contact-tab"
@@ -933,7 +934,7 @@
                         id="pills-tab"
                         role="tablist"
                       >
-                        <li class="nav-item roll_btn">
+                        <li class="nav-item roll_btns">
                           <button
                             class="nav-link active"
                             id="courier-domestic-tab"
@@ -947,7 +948,7 @@
                             <span class="px-4 mx-1"> Domestic </span>
                           </button>
                         </li>
-                        <li class="nav-item roll_btn">
+                        <li class="nav-item roll_btns">
                           <button
                             class="nav-link"
                             id="courier-international-tab"
@@ -975,18 +976,17 @@
                       aria-labelledby="courier-domestic-tab"
                     >
                       <div class="row">
+                        <p class="my-4 px-5">
+                          Conquer distance with ease. From the misty hills of
+                          Himachal to the sunny plains of Tamil Nadu, we're here
+                          for you. We offer seamless moves across India. From
+                          residential moves to commercial moves, from gifts to
+                          heavy machinery, we've got you covered. Our nationwide
+                          network, ensures swift and safe deliveries each and
+                          every time. Make your move right now!
+                        </p>
                         <div class="col-md-7 col-12">
-                          <p class="my-4 p-0">
-                            Conquer distance with ease. From the misty hills of
-                            Himachal to the sunny plains of Tamil Nadu, we're
-                            here for you. We offer seamless moves across India.
-                            From residential moves to commercial moves, from
-                            gifts to heavy machinery, we've got you covered. Our
-                            nationwide network, ensures swift and safe
-                            deliveries each and every time. Make your move right
-                            now!
-                          </p>
-                          <ul class="list-unstyled">
+                          <ul class="list-unstyled px-3">
                             <li class="">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text"
@@ -1059,14 +1059,14 @@
                       aria-labelledby="courier-international-tab"
                     >
                       <div class="row">
+                        <p class="my-4 px-5">
+                          Love has no boundaries! Send your loved one’s
+                          gift/goods across the globe. You don’t have to worry,
+                          from customs clearance to insurance coverage, we will
+                          handle them all.
+                        </p>
                         <div class="col-md-7 col-12">
-                          <p class="my-4 p-0">
-                            Love has no boundaries! Send your loved one’s
-                            gift/goods across the globe. You don’t have to
-                            worry, from customs clearance to insurance coverage,
-                            we will handle them all.
-                          </p>
-                          <ul class="list-unstyled">
+                          <ul class="list-unstyled px-3">
                             <li class="">
                               <i class="fas fa-check tick_green"></i>
                               <span class="list-text"
@@ -1643,7 +1643,9 @@
           <div class="col-md-3 col-12"></div>
         </div>
         <div class="moving_image">
-          <button href="#" class="call-button-btn fw-bold">CALL US</button>
+          <a href="tel:919150150687" class="text-decoration-none">
+            <button href="#" class="call-button-btn fw-bold">CALL US</button>
+          </a>
         </div>
       </div>
     </section>
@@ -1717,10 +1719,14 @@
                 <a href="#" class="text-decoration-none"> STATE-STATE</a>
               </div>
               <div class="links2">
-                <a href="#" class="text-decoration-none"> INTERNATIONAL COURIER SERVICE </a>
+                <a href="#" class="text-decoration-none">
+                  INTERNATIONAL COURIER SERVICE
+                </a>
               </div>
               <div class="links2">
-                <a href="#" class="text-decoration-none"> DOMESTIC COURIER SERVICE</a>
+                <a href="#" class="text-decoration-none">
+                  DOMESTIC COURIER SERVICE</a
+                >
               </div>
             </div>
           </div>

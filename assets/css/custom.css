@@ -1218,6 +1218,20 @@ button.accordion-button:not(.collapsed)::after {
   display: flex;
   justify-content: center;
 }
+.roll_btns {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  transition: opacity 0.3s ease;
+}
 
 .tab-content {
   padding: 20px 25px;
@@ -1459,24 +1473,13 @@ button.accordion-button:not(.collapsed)::after {
 }
 
 .contact-button {
-  background-color: #acff3b;
-  border-color: #acff3b;
+  background-color: #acff3b !important;
+  border-color: #acff3b !important;
   padding: 12px 45px !important;
   font-weight: 500;
   margin-top: 10px;
-  color: #333;
+  color: #333 !important;
 }
-
-.contact-button:hover {
-  border: 1px solid #333;
-  background-color: #333 !important;
-  color: #acff3b !important;
-  padding: 12px 45px !important;
-  font-weight: 500;
-  margin-top: 10px;
-}
-
-
 
 .contact-subheading2 {
   color: #acff3b;

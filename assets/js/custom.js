@@ -476,15 +476,20 @@ $("#contactForm").validate({
       type: "POST",
       contentType: "application/json",
       data: JSON.stringify(payload),
-      success: function (response) {
-        console.log("API response:", response);
-        showSuccessModal();
-        $(form).trigger("reset"); // Reset form after successful submission
+      success: function (response, status, xhr) {
+        if (xhr.status === 201 && response) {
+          $("#successModal").modal("show");
+          $("#contactForm")[0].reset();
+        } else {
+          console.error("Unexpected response or missing leadId:", response);
+        }
+
+        $("#contactForm")[0].reset();
       },
       error: function (xhr, status, error) {
-        console.error("API call failed:", error);
-        alert("There was an error processing your request. Please try again.");
-        showErrorModal();
+        console.error("First API call failed:", error);
+        $("#errorModal").modal("show");
+        $("#contactForm")[0].reset();
       },
     });
   },
