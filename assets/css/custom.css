@@ -1485,3 +1485,291 @@ button.accordion-button:not(.collapsed)::after {
   color: #acff3b;
 }
 /* Contact Us End */
+
+/* ------------------------------------------ State to state section start ------------------------------------------- */
+
+.state_banner {
+  background: linear-gradient(180deg, #54535362, #00000023, #00000023),
+    url("../images/state_banner_img.webp") center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+  .state_heading_section {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .state_heading_section h1 {
+    font-family: "Afacad";
+    font-size: 20px !important;
+    text-align: center !important;
+    font-weight: 600;
+    line-height: 30px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .state_heading_section h2 {
+    font-family: "Afacad";
+    font-size: 30px !important;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center !important;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .dhl_rounded_img {
+    width: 70px !important;
+  }
+  .state_content {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .descrp_text {
+    font-family: "Afacad";
+    font-size: 26px !important;
+    font-weight: 600;
+    line-height: 32px !important;
+    text-align: center !important;
+    color: #fff;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-bottom: 20px;
+  }
+  .item_move_content_state {
+    padding-top: 0.5rem !important;
+  }
+}
+
+.item_move_content_state {
+  padding-top: 3.5rem;
+}
+
+.state_heading_section {
+  display: flex;
+  justify-content: end !important;
+  align-items: end !important;
+}
+
+.state_heading_section h1 {
+  font-family: "Afacad";
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 40px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.state_heading_section h2 {
+  font-family: "Afacad";
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.descrp_text {
+  font-family: "Afacad";
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: start;
+  color: #fff;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.state_quate_title {
+  font-size: 14px;
+}
+.state_side_card_heading {
+  padding: 8px;
+}
+@media screen and (max-width: 450px) {
+  .state_card_positions {
+    position: relative;
+    top: 0px !important;
+    padding: 20px 0;
+  }
+}
+.state_card_title {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 10px 0;
+  flex-grow: 1;
+}
+
+.state_card_positions {
+  position: relative;
+  top: 120px;
+  padding: 20px 0;
+}
+
+.state_card_icon {
+  width: 40px;
+  height: 35px;
+}
+
+/* state Booking section start */
+
+@media screen and (max-width: 450px) {
+  .booking_sections {
+    padding: 0 !important;
+  }
+  .booking_title_section {
+    font-family: "Afacad";
+    font-size: 26px !important;
+    font-weight: 600;
+    line-height: 44px !important;
+    text-align: center !important;
+    color: #80dc00;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 0 10px;
+  }
+  .booking_points {
+    font-family: "Afacad";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px !important;
+    text-align: start !important;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .booking_sections {
+    padding: 10px !important;
+  }
+  .booknow_btn_ctr {
+    display: flex;
+    justify-content: center !important;
+  }
+  .state_booking_section {
+    padding-top: 0.5rem !important;
+  }
+}
+.state_booking_section {
+  padding-top: 3.5rem;
+}
+
+.booking_sections {
+  padding: 60px 30px;
+}
+.booking_title_section {
+  font-family: "Afacad";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 62.4px;
+  text-align: start;
+  color: #80dc00;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 0 10px;
+}
+.booking_points {
+  font-family: "Afacad";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.state_btn_booknow {
+  background: #80dc00;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #80dc00;
+  padding: 10px 25px;
+  margin: 0 0 0 20px;
+}
+.state_btn_booknow:hover {
+  background: #92ed12;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #80dc00;
+  padding: 10px 25px;
+  margin: 0 0 0 20px;
+}
+/* state Booking section end */
+
+/* Bulk shipment section start */
+
+@media screen and (max-width: 450px) {
+  .state_shipment {
+    padding: 0 !important;
+  }
+}
+.state_shipment {
+  background: linear-gradient(180deg, #54535362, #00000023, #00000023),
+    url("../images/drop_us.webp") top no-repeat;
+  background-size: cover;
+  padding: 7rem 4rem;
+}
+.state_shipment_description {
+  line-height: 30px;
+  font-family: "Afacad";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+/* Bulk shipment section end */
+
+/* Drop us start */
+
+@media screen and (max-width: 450px) {
+  .state_dropus_cont {
+    text-align: center !important;
+  }
+  .state_drop_us {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .dropus_container {
+    padding-bottom: 0px !important;
+  }
+}
+.drop_us {
+  background: linear-gradient(180deg, #545353b9, #00000023, #545353b9),
+    url("../images/drop_us_truck.webp") center no-repeat;
+  background-size: cover;
+  padding: 1.5rem 0;
+}
+
+.state_btn_contactus {
+  background: #80dc00;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #80dc00;
+  padding: 5px 25px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.state_btn_contactus:hover {
+  background: #92ed12;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #80dc00;
+  padding: 5px 25px;
+  margin: 0 0 0 20px;
+}
+
+.dropus_container {
+  padding-bottom: 5rem;
+}
+/* Drop us end */
