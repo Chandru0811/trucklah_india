@@ -1489,7 +1489,7 @@ button.accordion-button:not(.collapsed)::after {
 /* ------------------------------------------ State to state section start ------------------------------------------- */
 
 .state_banner {
-  background: linear-gradient(180deg, #54535362, #00000023, #00000023),
+  background: linear-gradient(170deg, #242424a8, #00000046, #929191ce),
     url("../images/state_banner_img.webp") center no-repeat;
   background-size: cover;
 }
@@ -1531,7 +1531,7 @@ button.accordion-button:not(.collapsed)::after {
     font-family: "Afacad";
     font-size: 26px !important;
     font-weight: 600;
-    line-height: 32px !important;
+    line-height: 30px !important;
     text-align: center !important;
     color: #fff;
     text-underline-position: from-font;
@@ -1541,10 +1541,23 @@ button.accordion-button:not(.collapsed)::after {
   .item_move_content_state {
     padding-top: 0.5rem !important;
   }
+  .courier_content_state {
+    padding-bottom: 0.5rem !important;
+  }
 }
-
+.state_colon img {
+  height: 20px;
+  width: 100px;
+}
+.state_colon_end img {
+  position: relative;
+  top: 1.2rem;
+}
 .item_move_content_state {
-  padding-top: 3.5rem;
+  padding-top: 7rem;
+}
+.courier_content_state {
+  padding-bottom: 5.5rem;
 }
 
 .state_heading_section {
@@ -1711,7 +1724,7 @@ button.accordion-button:not(.collapsed)::after {
   }
 }
 .state_shipment {
-  background: linear-gradient(180deg, #54535362, #00000023, #00000023),
+  background: linear-gradient(180deg, #2f2f2fb2, #2f2f2fb2, #2f2f2fb2),
     url("../images/drop_us.webp") top no-repeat;
   background-size: cover;
   padding: 7rem 4rem;
@@ -1742,8 +1755,8 @@ button.accordion-button:not(.collapsed)::after {
   }
 }
 .drop_us {
-  background: linear-gradient(180deg, #545353b9, #00000023, #545353b9),
-    url("../images/drop_us_truck.webp") center no-repeat;
+  background: linear-gradient(180deg, #2f2f2fb2, #2f2f2fb2, #2f2f2fb2),
+    url("../images/drop_us_state.webp") center no-repeat;
   background-size: cover;
   padding: 1.5rem 0;
 }
