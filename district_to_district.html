@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trucklah - Moving Made Easy between India and Sinagapore</title>
+
+    <link rel="icon" href="./assets/images/favicon.svg" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <!-- AOS Animation CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section class="headerSection">
+      <nav id="NavBar" class="navbar mainNav navbar-expand-xl header">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <a href="/">
+            <img
+              src="./assets/images/logo.webp"
+              alt="header-logo"
+              class="img-fluid header-logo text-start"
+              width="160"
+            />
+          </a>
+          <div class="d-flex align-items-center mb-1">
+            <span
+              class="navbar-text d-xl-none align-items-center justify-content-end login-button"
+            >
+              <a href="https://trucklah.com/auth/">
+                <button class="btn login_button_toggle" type="submit">
+                  Login
+                </button>
+              </a>
+            </span>
+            &nbsp;&nbsp;&nbsp;
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarText">
+            <!-- Collapsed View (Small Screens) -->
+            <ul
+              class="navbar-nav mx-auto lg-0 d-xl-none d-flex pt-2"
+              id="default-search"
+            >
+              <li class="nav-item header-menu">
+                <a
+                  class="nav-link header_fw active"
+                  aria-current="page"
+                  href="./district_to_district.html"
+                  >DISTRICT-DISTRICT</a
+                >
+              </li>
+              <li class="nav-item header-menu">
+                <a class="nav-link header_fw" href="./state_to_state.html"
+                  >STATE-STATE</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link header_fw text-dark dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  COURIER SERVICE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >International courier service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Domestic courier service</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Expanded View (Large Screens) -->
+            <div class="ms-auto d-none d-xl-flex align-items-center">
+              <ul class="navbar-nav pe-4 flex-row gap-4">
+                <li class="nav-item header-menus">
+                  <a
+                    class="nav-link active_menu active_sections header_fw text-dark"
+                    href="./district_to_district.html"
+                    ><span class="tab_section">DISTRICT-DISTRICT</span></a
+                  >
+                </li>
+                <li class="nav-item header-menu">
+                  <a
+                    class="nav-link header_fw active_section text-dark"
+                    aria-current="page"
+                    href="./state_to_state.html"
+                    >STATE-STATE</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link header_fw text-dark dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    COURIER SERVICE
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >International courier service</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Domestic courier service</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <span
+                class="navbar-text d-none d-xl-inline align-items-center justify-content-end"
+              >
+                <a href="#">
+                  <button class="btn login_button" type="submit">LOGIN</button>
+                </a>
+              </span>
+              &nbsp;&nbsp;
+            </div>
+            &nbsp;&nbsp;
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Header End  -->
+
+    <!-- Banner Start  -->
+    <section class="district_banner">
+      <div class="container-fluid district_cont space_common">
+        <div class="row m-0 py-5 space_common">
+          <div class="col-lg-7 col-md-7 col-12">
+            <div
+              class="d-flex flex-column justify-content-center align-items-start pt-4 state_content"
+            >
+              <h1 class="heading_banner_district text-start text-light">
+                <span class="safe_delivery">Trucklah</span> - Moving Made Easy
+              </h1>
+              <h2 class="sub_heading_dustrict text-start text-light">
+                AFFORDABLE,&nbsp;
+                <span class="safe_delivery">SAFE & FAST </span>
+                DELIVERY
+                <span class="dhl_rounded_img_district">
+                  <img
+                    src="./assets/images/DHL partner logo.svg"
+                    alt="DHL"
+                    class="img-fluid size_dhl"
+                    style="width: 70px"
+                  />
+                </span>
+              </h2>
+            </div>
+            <div class="row m-0 py-4 space_common">
+              <div class="col-lg-9 col-md-9 col-12">
+                <div class="state_descrp d-flex py-4 space_common">
+                  <p class="district_colon">
+                    <img
+                      src="./assets/images/colon_last.webp"
+                      alt="colon_last"
+                      class="img-fluid"
+                    />
+                  </p>
+                  <h3 class="descrp_text">
+                    We help your moving supplies across all locations!
+                    <span class="state_colon_end"
+                      ><img
+                        src="./assets/images/colon_end.webp"
+                        alt="colon_end"
+                        class="img-fluid"
+                    /></span>
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-12"></div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-12">
+            <div class="card shadow">
+              <div class="card-body">
+                <h5 class="card-title">Get Instant Quotes</h5>
+
+                <ul
+                  class="nav nav-tabs form-active-tab"
+                  id="quoteTabs"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link state_side_card_heading active"
+                      id="domestic-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#domestic"
+                      type="button"
+                      role="tab"
+                      aria-controls="domestic"
+                      aria-selected="true"
+                    >
+                      <i
+                        class="fa-sharp-duotone fa-solid fa-truck-fast"
+                        style="
+                          --fa-primary-color: #76ce00;
+                          --fa-secondary-color: #76ce00;
+                          font-size: 10px;
+                        "
+                      ></i>
+                      &nbsp;&nbsp;<span class="state_quate_title"
+                        >Domestic</span
+                      >
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link state_side_card_heading"
+                      id="international-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#international"
+                      type="button"
+                      role="tab"
+                      aria-controls="international"
+                      aria-selected="false"
+                    >
+                      <i
+                        class="fa-duotone fa-solid fa-plane"
+                        style="
+                          --fa-primary-color: #76ce00;
+                          --fa-secondary-color: #76ce00;
+                          font-size: 10px;
+                        "
+                      ></i>
+                      &nbsp;&nbsp;<span class="state_quate_title"
+                        >International</span
+                      >
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link state_side_card_heading"
+                      id="express-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#express"
+                      type="button"
+                      role="tab"
+                      aria-controls="express"
+                      aria-selected="false"
+                    >
+                      <i
+                        class="fa-duotone fa-solid fa-bolt"
+                        style="
+                          --fa-primary-color: #76ce00;
+                          --fa-secondary-color: #76ce00;
+                          font-size: 10px;
+                        "
+                      ></i>
+                      &nbsp;&nbsp;<span class="state_quate_title">
+                        On-demand
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="tab-content mt-3" id="quoteTabsContent">
+                  <!-- Domestic Form -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="domestic"
+                    role="tabpanel"
+                    aria-labelledby="domestic-tab"
+                  >
+                    <form id="instantquotes_domestic">
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label for="instantquotes_from" class="form-label"
+                            >From:</label
+                          >
+                          <input
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_from"
+                            name="instantquotes_from"
+                            type="text"
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label for="instantquotes_to" class="form-label"
+                            >To:</label
+                          >
+                          <input
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_to"
+                            name="instantquotes_to"
+                            type="text"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label for="instantquotes_email1" class="form-label"
+                            >Email:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"
+                              ><i class="fa-solid fa-envelope"></i
+                            ></span>
+                            <input
+                              type="email"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_email1"
+                              name="instantquotes_email1"
+                              placeholder="Enter email"
+                              aria-label="Email"
+                              aria-describedby="email-addon"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label for="instantquotes_mobile" class="form-label"
+                            >Mobile:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="mobile-addon">
+                              <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_mobile"
+                              name="instantquotes_mobile"
+                              placeholder="Enter mobile"
+                              aria-label="Mobile"
+                              aria-describedby="mobile-addon"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_description"
+                            class="form-label"
+                            >Weight:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="weight-addon">
+                              <i class="fa-solid fa-weight-scale"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_description"
+                              name="instantquotes_description"
+                              placeholder="Kg"
+                              aria-label="Weight"
+                              aria-describedby="weight-addon"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label for="instantquotes_date" class="form-label"
+                            >Date:</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_date"
+                            name="instantquotes_date"
+                            placeholder="Kg"
+                            aria-label="Weight"
+                            aria-describedby="weight-addon"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-center align-items-center pt-4"
+                      >
+                        <button
+                          class="btn btn-sm text-light"
+                          style="background: #80dc00"
+                        >
+                          Get a Quote
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- International Form -->
+                  <div
+                    class="tab-pane fade"
+                    id="international"
+                    role="tabpanel"
+                    aria-labelledby="international-tab"
+                  >
+                    <form id="instantquotes_international">
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_from_inter"
+                            class="form-label"
+                            >From:</label
+                          >
+                          <input
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_from_inter"
+                            name="instantquotes_from_inter"
+                            type="text"
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label for="instantquotes_to_inter" class="form-label"
+                            >To:</label
+                          >
+                          <input
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_to_inter"
+                            name="instantquotes_to_inter"
+                            type="text"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_email_inter"
+                            class="form-label"
+                            >Email:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="email-addon">
+                              <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <input
+                              type="email"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_email_inter"
+                              name="instantquotes_email_inter"
+                              placeholder="Enter email"
+                              aria-label="Email"
+                              aria-describedby="email-addon"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_mobile_inter"
+                            class="form-label"
+                            >Mobile:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="mobile-addon">
+                              <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_mobile_inter"
+                              name="instantquotes_mobile_inter"
+                              placeholder="Enter mobile"
+                              aria-label="Mobile"
+                              aria-describedby="mobile-addon"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_description_inter"
+                            class="form-label"
+                            >Weight:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="weight-addon">
+                              <i class="fa-solid fa-weight-scale"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_description_inter"
+                              name="instantquotes_description_inter"
+                              placeholder="Kg"
+                              aria-label="Weight"
+                              aria-describedby="weight-addon"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_date_inter"
+                            class="form-label"
+                            >Date:</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_date_inter"
+                            name="instantquotes_date_inter"
+                            placeholder="Kg"
+                            aria-label="Weight"
+                            aria-describedby="weight-addon"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-center align-items-center pt-4"
+                      >
+                        <button
+                          class="btn btn-sm text-light"
+                          style="background: #80dc00"
+                        >
+                          Get a Quote
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- Express Form -->
+                  <div
+                    class="tab-pane fade"
+                    id="express"
+                    role="tabpanel"
+                    aria-labelledby="express-tab"
+                  >
+                    <form id="instantquotes_ondemond">
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_from_demond"
+                            class="form-label"
+                            >From:</label
+                          >
+                          <input
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_from_demond"
+                            name="instantquotes_from_demond"
+                            type="text"
+                          />
+                        </div>
+
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_to_demond"
+                            class="form-label"
+                            >To:</label
+                          >
+                          <input
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_to_demond"
+                            name="instantquotes_to_demond"
+                            type="text"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_email_demond"
+                            class="form-label"
+                            >Email:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="email-addon">
+                              <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <input
+                              type="email"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_email_demond"
+                              name="instantquotes_email_demond"
+                              placeholder="Enter email"
+                              aria-label="Email"
+                              aria-describedby="email-addon"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_mobile_demond"
+                            class="form-label"
+                            >Mobile:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="mobile-addon">
+                              <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_mobile_demond"
+                              name="instantquotes_mobile_demond"
+                              placeholder="Enter mobile"
+                              aria-label="Mobile"
+                              aria-describedby="mobile-addon"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center">
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_description_demond"
+                            class="form-label"
+                            >Weight:</label
+                          >
+                          <div class="input-group">
+                            <span class="input-group-text" id="weight-addon">
+                              <i class="fa-solid fa-weight-scale"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="form-control form-control-sm focus_input"
+                              id="instantquotes_description_demond"
+                              name="instantquotes_description_demond"
+                              placeholder="Kg"
+                              aria-label="Weight"
+                              aria-describedby="weight-addon"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                        >
+                          <label
+                            for="instantquotes_date_demond"
+                            class="form-label"
+                            >Date:</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_date_demond"
+                            name="instantquotes_date_demond"
+                            placeholder="Kg"
+                            aria-label="Weight"
+                            aria-describedby="weight-addon"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-center align-items-center pt-4"
+                      >
+                        <button
+                          class="btn btn-sm text-light"
+                          style="background: #80dc00"
+                        >
+                          Get a Quote
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner End  -->
+
+    <!-- District cards section start  -->
+    <section class="district_cards_section py-4 space_common">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-md-3 col-lg-3 col-12 mb-3 p-4 space_common">
+            <div class="district_card">
+              <div class="text-center space_common py-3">
+                <img
+                  src="./assets/images/dist_card1.png"
+                  alt="dist_card1"
+                  class="img-fluid district_card_img"
+                />
+              </div>
+              <div class="district_card_text">
+                <h5 class="district_card_title text-center">
+                  Safe & Short time delivery
+                </h5>
+                <p class="district_card_description text-center text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor sed do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-12 mb-3 p-4 space_common">
+            <div class="district_card">
+              <div class="text-center space_common py-3">
+                <img
+                  src="./assets/images/dist_card2.png"
+                  alt="dist_card2"
+                  class="img-fluid district_card_img"
+                />
+              </div>
+              <div class="district_card_text">
+                <h5 class="district_card_title text-center">Affordable cost</h5>
+                <p class="district_card_description text-center text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor sed do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-12 mb-3 p-4 space_common">
+            <div class="district_card">
+              <div class="text-center space_common py-3">
+                <img
+                  src="./assets/images/dist_card3.png"
+                  alt="dist_card3"
+                  class="img-fluid district_card_img"
+                />
+              </div>
+              <div class="district_card_text">
+                <h5 class="district_card_title text-center">
+                  Customer support
+                </h5>
+                <p class="district_card_description text-center text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor sed do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-12 mb-3 p-4 space_common">
+            <div class="district_card">
+              <div class="text-center space_common py-3">
+                <img
+                  src="./assets/images/dist_card4.png"
+                  alt="dist_card4"
+                  class="img-fluid district_card_img"
+                />
+              </div>
+              <div class="district_card_text">
+                <h5 class="district_card_title text-center">
+                  Door step delivery
+                </h5>
+                <p class="district_card_description text-center text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor sed do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- District cards section end -->
+
+    <!-- offer section start -->
+    <section class="offer_section">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-lg-3 col-md-3 col-12"></div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <h3 class="offer_title district_card_title text-center">
+              We offer you the best logistic services
+            </h3>
+            <p class="text-muted text-center py-3 space_common">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- offer section end -->
+
+    <!-- scroll card section start -->
+    <section class="scroll_cards">
+      <div class="container p-0">
+        <div class="row m-0">
+          <div class="col-md-6 col-lg-6 col-12 p-2">
+            <div class="card border-0 bg-dark text-white scroll_content">
+              <img
+                class="card-img"
+                src="./assets/images/item_moving_scroll.png"
+                alt="item_moving_scroll"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end"
+              >
+                <h4 class="card-title">Item moving</h4>
+                <span class="underline_title"></span>
+                <p class="card-text">
+                  Whether it's a small parcel or a bulk shipment, our expert
+                  team and advanced tracking technology ensure that your items
+                  reach their destination promptly and securely. Lorem ipsum
+                  dolor sit amet, consectetur...
+                  <span class="know_more">Know more</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-12 p-2">
+            <div class="card border-0 bg-dark text-white scroll_content">
+              <img
+                class="card-img"
+                src="./assets/images/House_moving_scroll.png"
+                alt="House_moving_scroll"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end"
+              >
+                <h4 class="card-title">Home moving</h4>
+                <span class="underline_title"></span>
+                <p class="card-text">
+                  Moving house can be a stressful and time-consuming process,
+                  and that's where we come in. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                  dolor sit amet, consectetur...
+                  <span class="know_more">Know more</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-12 p-2">
+            <div class="card border-0 bg-dark text-white scroll_content">
+              <img
+                class="card-img"
+                src="./assets/images/commercial_moving_scroll.png"
+                alt="commercial_moving_scroll"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end"
+              >
+                <h4 class="card-title">Commercial moving</h4>
+                <span class="underline_title"></span>
+                <p class="card-text">
+                  Moving a business is a complex process that requires careful
+                  planning, precision, and efficiency. From offices to
+                  warehouses, we handle every detail with professionalism and
+                  care...
+                  <span class="know_more">Know more</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-12 p-2">
+            <div class="card border-0 bg-dark text-white scroll_content">
+              <img
+                class="card-img"
+                src="./assets/images/courier_scroll.png"
+                alt="courier_scroll"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end"
+              >
+                <h4 class="card-title">Courier & Parcel service</h4>
+                <span class="underline_title"></span>
+                <p class="card-text">
+                  Our courier service is designed to make parcel moving simple,
+                  fast, and reliable. Whether you’re sending a single document
+                  or a heavy package, we handle your items with the utmost care
+                  and efficiency...
+                  <span class="know_more">Know more</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- scroll card section end -->
+
+    <!-- safe section start  -->
+    <section class="safe_section py-4 space_common">
+      <div class="container safe_bg rounded">
+        <div class="row m-0 p-4 space_common">
+          <div class="col-lg-5 col-md-5 col-12 right_border">
+            <div class="d-flex justify-content-center align-items-center">
+              <img
+                src="./assets/images/safe_img1.png"
+                alt="safe_img1"
+                class="img-fluid"
+              />
+              <div class="handle_content_text p-3 space_common">
+                <h4 class="text-light">Safe handling</h4>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <img
+                src="./assets/images/safe_img2.png"
+                alt="safe_img2"
+                class="img-fluid"
+              />
+              <div class="handle_content_text p-3 space_common">
+                <h4 class="text-light">Safe handling</h4>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-12">
+            <div class="p-3 space_common">
+              <h3 class="card-title text-light safe_align">Item moving</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- safe section end  -->
+
+    <!-- Drop us start -->
+    <section class="dropus_container">
+      <div class="container rounded drop_us_district text-center">
+        <div class="row m-0">
+          <div class="col-lg-2 col-md-2 col-12"></div>
+          <div class="col-lg-8 col-md-8 col-12">
+            <div
+              class="d-flex state_drop_us justify-content-between align-items-center p-3"
+            >
+              <h3 class="text-light text-start state_dropus_cont">
+                Interested in our moving solutions? Drop us a note for any sales
+                inquiries.
+              </h3>
+              <p class="p-3">
+                <a href="#" class="btn state_btn_contactus">CONTACT US</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Drop us end -->
+
+    <!-- footer start  -->
+    <section class="footer-conent">
+      <div class="container footer_texts">
+        <div class="row m-0 m-0">
+          <div class="col-md-2 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title">HELP</p>
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/auth"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Register</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/auth"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Login</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="./contactus.html"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/termsandconditions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Terms & conditions</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/privacypolicy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title" style="white-space: nowrap">
+                OUR SERVICES
+              </p>
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a href="#" class="text-decoration-none">DISTRICT-DISTRICT</a>
+              </div>
+              <div class="links2">
+                <a href="#" class="text-decoration-none"> STATE-STATE</a>
+              </div>
+              <div class="links2">
+                <a href="#" class="text-decoration-none">
+                  INTERNATIONAL COURIER SERVICE
+                </a>
+              </div>
+              <div class="links2">
+                <a href="#" class="text-decoration-none">
+                  DOMESTIC COURIER SERVICE</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title">CONTACT</p>
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="https://maps.app.goo.gl/j7DoYn5mgP1RzUkz6"
+                  class="text-decoration-none d-flex justify-content-md-start align-items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    class="fa-solid fa-location-dot me-2 mb-5"
+                    style="color: #80dc00"
+                  ></i>
+                  <span
+                    >766, Sakthi Tower Ln, Anna Salai,<br />
+                    Thousand Lights, Chennai,<br />
+                    Tamil Nadu 600002.</span
+                  >
+                </a>
+              </div>
+              <div class="links2">
+                <a href="mailto:info@trucklah.in" class="text-decoration-none">
+                  <i
+                    class="fa-regular fa-envelope mailto:me-2"
+                    style="color: #80dc00"
+                  ></i
+                  >&nbsp;&nbsp;<span>info@trucklah.in</span></a
+                >
+              </div>
+              <div class="links2">
+                <a href="tel:919150150687" class="text-decoration-none">
+                  <i class="fa-solid fa-phone me-2" style="color: #80dc00"></i>
+                  +91 91501 50687</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 text-start mt-4 px-5 form_col">
+            <div
+              class="card contact_form py-3 px-4"
+              style="background-color: #80dc00; border: 1px solid #80dc00"
+            >
+              <div class="form-container">
+                <h2 class="text-white form_heading">
+                  LET'S TALK! MOVING IS NOW EASY.
+                </h2>
+                <form id="contactUsForm">
+                  <div class="row m-0">
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          placeholder="Name"
+                          id="contact_us_first_name"
+                          name="contact_us_first_name"
+                          required
+                        />
+                        <!-- Error message will be inserted here -->
+                        <div class="error mt-0 mb-3"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          style="box-shadow: none"
+                          placeholder="Email ID"
+                          id="contact_us_email"
+                          name="contact_us_email"
+                          required
+                        />
+                        <div class="error mt-0 mb-3 col-12"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          placeholder="Phone"
+                          aria-describedby="basic-addon1"
+                          id="contact_us_phone"
+                          name="contact_us_phone"
+                          required
+                        />
+                        <!-- Error message will be inserted here -->
+                        <div class="error mt-0 mb-3"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          placeholder="Country"
+                          aria-describedby="basic-addon1"
+                          id="contact_us_country"
+                          name="contact_us_country"
+                          required
+                        />
+                        <div class="error mt-0 mb-3 col-12"></div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          placeholder="Message"
+                          aria-describedby="basic-addon1"
+                          id="contact_us_message"
+                          name="contact_us_message"
+                          required
+                        />
+                        <div class="error mt-0 mb-3 col-12"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_button_footer">
+                    <button type="submit" class="footer_submit">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer end   -->
+
+    <!-- copyrights start  -->
+    <div class="copyrights">
+      <p class="text-center m-0">
+        Copyright © 2024 YUAA Logistics Pvt Ltd. All Rights Reserved.
+      </p>
+    </div>
+    <!-- copyrights end  -->
+
+    <!-- error model -->
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="errorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modalContent">
+          <div
+            class="modal-header d-flex align-items-center justify-content-between errorHeading shadow-none mb-2"
+            style="background-color: rgb(255, 80, 80); color: white"
+          >
+            <p class="modal-title" id="errorModalLabel" style="font-size: 28px">
+              There was an error
+            </p>
+            <button
+              type="button"
+              class="btn btn-sm"
+              onclick="closePopup()"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center pt-0">
+            <!-- Error Icon -->
+            <i
+              class="fa-solid fa-circle-exclamation my-4"
+              style="color: rgb(255, 80, 80); font-size: 70px"
+            ></i>
+            <p class="mb-0 errorMagnetSubHeading fw-bold pb-4">
+              We are sorry !
+            </p>
+            <p class="mb-0 errorMagnetSubHeading text-muted fw-bold pb-2">
+              You can reach us on
+            </p>
+            <p class="mb-0 errorMobile pb-4">+91 91501 50687</p>
+
+            <!-- Contact Us Button -->
+            <a href="/" class="btn successMagnetButton">
+              <i class="fas fa-arrow m-0-left"></i> Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div
+      class="modal fade text-center"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modalContent">
+          <div
+            class="modal-header d-flex align-content-center justify-content-between"
+            style="background: #acff3b; color: #333"
+          >
+            <p
+              class="modal-title"
+              id="successModalLabel"
+              style="font-size: 28px"
+            >
+              That's all required!
+            </p>
+            <!-- Bootstrap 5 close button -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-0">
+            <!-- Success Video -->
+            <i
+              class="fa-solid fa-circle-check my-5"
+              style="color: #28a745; font-size: 80px"
+            ></i>
+            <p class="mb-0 SuccessMagnetSubHeading pb-4">
+              We will get back to you soon!
+            </p>
+
+            <!-- Back to Home Button -->
+            <a href="/">
+              <button class="btn successMagnetButton">Back to Home</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Lazyloader -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      async
+    ></script>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- jQuery Validator -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>

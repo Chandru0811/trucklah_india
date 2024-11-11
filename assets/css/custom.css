@@ -20,6 +20,36 @@
   }
 }
 
+.active_menu {
+  position: relative;
+  bottom: 5px;
+  border-bottom: 2px solid #000 !important;
+}
+.tab_section {
+  position: relative;
+  top: 4px;
+}
+
+.header-menu .active_section {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.header-menu .active_section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 1);
+  transition: width 0.3s ease;
+}
+
+.header-menu .active_section:hover::after {
+  width: 100%;
+}
+
 .login_button_toggle {
   background: #6ed237;
   color: #fff;
@@ -113,8 +143,15 @@
 
 .banner {
   background: linear-gradient(180deg, #77ff0023, #ecf4e318, #ffffff2d),
-    url("../images/banner_draw_bg.webp") center no-repeat;
+    url("../images/index_bg_trucklah.png") top no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 1440px) {
+  .banner {
+    background: linear-gradient(180deg, #77ff0023, #ecf4e318, #ffffff2d),
+      url("../images/index_bg_trucklah.png") top no-repeat;
+    background-size: contain;
+  }
 }
 
 .banner_container {
@@ -158,7 +195,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: -8rem;
 }
 
 .btn_booknow:hover {
@@ -1234,7 +1270,7 @@ button.accordion-button:not(.collapsed)::after {
 }
 
 .tab-content {
-  padding: 20px 25px;
+  padding: 10px;
 }
 
 .list-text {
@@ -1294,17 +1330,21 @@ button.accordion-button:not(.collapsed)::after {
 }
 .form-card {
   position: relative;
-  left: 8rem;
-  top: -13rem;
+  /* left: 0rem; */
+  top: -5rem;
   height: 1px;
   margin: 0;
 }
 .form-active-tab .nav-link {
   color: black !important;
+  padding: 5px;
+  font-size: 15px;
 }
 
 .form-active-tab .nav-link.active {
   color: #80dc00 !important;
+  padding: 5px;
+  font-size: 15px;
 }
 
 .homeSection-3_tab {
@@ -1786,3 +1826,125 @@ button.accordion-button:not(.collapsed)::after {
   padding-bottom: 5rem;
 }
 /* Drop us end */
+
+/* ------------------- District to District start section ------------------------ */
+
+.district_banner {
+  background: linear-gradient(170deg, #242424a8, #00000046, #929191ce),
+    url("../images/district_banner.webp") center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+  .dhl_rounded_img_district {
+    width: 50px !important;
+    position: relative;
+    top: 0px !important;
+  }
+  .heading_banner_district {
+    font-family: "Afacad", system-ui;
+    font-size: 1.5rem !important;
+    font-weight: normal;
+    text-align: center !important;
+  }
+  .sub_heading_dustrict {
+    font-size: 2rem !important;
+    font-weight: medium;
+    text-align: center !important;
+  }
+  .space_common {
+    padding: 10px !important;
+  }
+  .right_border {
+    border-right: none !important;
+  }
+  .safe_align {
+    text-align: center !important;
+  }
+}
+
+.heading_banner_district {
+  font-family: "Afacad", system-ui;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+.sub_heading_dustrict {
+  font-size: 2.5rem;
+  font-weight: medium;
+}
+.dhl_rounded_img_district {
+  width: 70px !important;
+  position: relative;
+  top: -30px;
+}
+.district_colon img {
+  height: 20px;
+  width: 30px;
+}
+.district_cont {
+  padding: 100px 50px;
+}
+.district_card_title {
+  color: #6ed237;
+}
+.district_card_img {
+  border: 1px solid #33333328;
+  border-radius: 40px;
+  padding: 15px;
+  height: 60% !important;
+  width: 60% !important;
+}
+
+.drop_us_district {
+  background: linear-gradient(180deg, #2f2f2fb2, #2f2f2fb2, #2f2f2fb2),
+    url("../images/drop_us_state.webp") center no-repeat;
+  background-size: cover;
+  padding: 1.5rem 0;
+}
+
+.scroll_content:hover {
+  border: 3px solid #6ed237 !important;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+.scroll_content {
+  border: 3px solid white !important;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.scroll_content .underline_title {
+  border-bottom: 3px solid #6ed237;
+  width: 40px;
+  position: relative;
+  top: -6px;
+}
+.know_more {
+  color: #6ed237;
+}
+.safe_bg {
+  background: #6ed237 !important;
+}
+.handle_content_text h4 {
+  font-family: "Afacad";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 52.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.handle_content_text p {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.right_border {
+  border-right: 1px solid #d5f6c4;
+}
