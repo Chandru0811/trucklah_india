@@ -1861,6 +1861,12 @@ button.accordion-button:not(.collapsed)::after {
   .safe_align {
     text-align: center !important;
   }
+  .uline {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
 }
 
 .heading_banner_district {
@@ -1947,4 +1953,18 @@ button.accordion-button:not(.collapsed)::after {
 
 .right_border {
   border-right: 1px solid #d5f6c4;
+}
+
+.underline_common {
+  border-bottom: 3px solid #fff;
+  width: 60px;
+}
+.underline_common2 {
+  border-bottom: 3px solid #6ed237;
+  width: 60px;
+}
+
+.colom_bg {
+  background: #f2f4f0;
+  border-radius: 5px;
 }
