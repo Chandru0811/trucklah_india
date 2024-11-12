@@ -494,3 +494,24 @@ $("#contactForm").validate({
     });
   },
 });
+
+function scrollToSection() {
+  document.getElementById("safeSection").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function scrollToSectionHome() {
+  document.getElementById("homeSection").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function scrollToSectionCommercial() {
+  document.getElementById("commercialSection").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function scrollToSectionCourier() {
+  document.getElementById("courierSection").scrollIntoView({
+    behavior: "smooth",
+  });
+}
