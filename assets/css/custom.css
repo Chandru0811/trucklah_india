@@ -1887,7 +1887,7 @@ button.accordion-button:not(.collapsed)::after {
   width: 30px;
 }
 .district_cont {
-  padding: 100px 50px;
+  padding: 100px 50px 10px 50px;
 }
 .district_card_title {
   color: #6ed237;
@@ -1978,4 +1978,28 @@ button.accordion-button:not(.collapsed)::after {
 .colom_bg {
   background: #f2f4f0;
   border-radius: 5px;
+}
+
+/* ------------------- International to International  section ------------------------ */
+
+.international_banner {
+  background: linear-gradient(170deg, #242424a8, #00000046, #929191ce),
+    url("../images/international_bg.webp") center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+  .fright_text {
+    color: white;
+    font-size: 2.5rem !important;
+  }
+}
+
+.fright_text {
+  color: white;
+  font-size: 4rem;
+}
+
+.common_green_text {
+  color: #6ed237 !important;
 }

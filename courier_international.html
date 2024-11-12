@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trucklah - Moving Made Easy between India and Sinagapore</title>
+
+    <link rel="icon" href="./assets/images/favicon.svg" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <!-- AOS Animation CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section class="headerSection">
+      <nav id="NavBar" class="navbar mainNav navbar-expand-xl header">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <a href="/">
+            <img
+              src="./assets/images/logo.webp"
+              alt="header-logo"
+              class="img-fluid header-logo text-start"
+              width="160"
+            />
+          </a>
+          <div class="d-flex align-items-center mb-1">
+            <span
+              class="navbar-text d-xl-none align-items-center justify-content-end login-button"
+            >
+              <a href="https://trucklah.com/auth/">
+                <button class="btn login_button_toggle" type="submit">
+                  Login
+                </button>
+              </a>
+            </span>
+            &nbsp;&nbsp;&nbsp;
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarText">
+            <!-- Collapsed View (Small Screens) -->
+            <ul
+              class="navbar-nav mx-auto lg-0 d-xl-none d-flex pt-2"
+              id="default-search"
+            >
+              <li class="nav-item header-menu">
+                <a
+                  class="nav-link header_fw active"
+                  aria-current="page"
+                  href="./district_to_district.html"
+                  >DISTRICT-DISTRICT</a
+                >
+              </li>
+              <li class="nav-item header-menu">
+                <a class="nav-link header_fw" href="./state_to_state.html"
+                  >STATE-STATE</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link header_fw text-dark dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  COURIER SERVICE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./courier_international.html"
+                      >International courier service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Domestic courier service</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Expanded View (Large Screens) -->
+            <div class="ms-auto d-none d-xl-flex align-items-center">
+              <ul class="navbar-nav pe-4 flex-row gap-4">
+                <li class="nav-item header-menu">
+                  <a
+                    class="nav-link header_fw text-dark"
+                    aria-current="page"
+                    href="./district_to_district.html"
+                    >DISTRICT-DISTRICT</a
+                  >
+                </li>
+                <li class="nav-item header-menu">
+                  <a
+                    class="nav-link header_fw text-dark"
+                    href="./state_to_state.html"
+                    >STATE-STATE</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link header_fw text-dark dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    COURIER SERVICE
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./courier_international.html"
+                        >International courier service</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Domestic courier service</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <span
+                class="navbar-text d-none d-xl-inline align-items-center justify-content-end"
+              >
+                <a href="#">
+                  <button class="btn login_button" type="submit">LOGIN</button>
+                </a>
+              </span>
+              &nbsp;&nbsp;
+            </div>
+            &nbsp;&nbsp;
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Header End  -->
+
+    <!-- Hero Section start-->
+    <section class="international_banner">
+      <div
+        class="container-fluid district_cont space_common d-flex justify-content-center"
+      >
+        <div
+          class="d-flex flex-column justify-content-center align-items-start pt-4 state_content"
+        >
+          <h1 class="heading_banner_district text-start text-light">
+            <span class="safe_delivery">Trucklah</span> - Moving Made Easy
+          </h1>
+          <h2 class="sub_heading_dustrict text-start text-light">
+            AFFORDABLE,&nbsp;
+            <span class="safe_delivery">SAFE & FAST </span>
+            DELIVERY
+            <span class="dhl_rounded_img_district">
+              <img
+                src="./assets/images/DHL partner logo.svg"
+                alt="DHL"
+                class="img-fluid size_dhl"
+                style="width: 70px"
+              />
+            </span>
+          </h2>
+        </div>
+      </div>
+      <div class="row m-0">
+        <div class="col-lg-3 col-md-3 col-12"></div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <h3 class="text-center fright_text px-3">
+            We freight to all over the world
+          </h3>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12"></div>
+      </div>
+      <div class="booknow_btn_ctr text-center pb-5 space-common">
+        <a href="./contactus.html" class="btn state_btn_booknow mt-3"
+          >BOOK NOW</a
+        >
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- choose section start -->
+    <section class="choose_section">
+      <div class="row m-0">
+        <div class="col-lg-3 col-md-3 col-12"></div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <h3 class="text-center common_green_text px-3 pt-4">Why choose us</h3>
+          <p class="text-muted text-center py-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12"></div>
+      </div>
+    </section>
+    <!-- choose section end -->
+
+    <!-- District cards section start  -->
+    <section class="district_cards_section py-4 space_common">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-md-3 col-lg-3 col-12 mb-3 p-4 space_common">
+            <div class="district_card">
+              <div class="text-center space_common py-3">
+                <img
+                  src="./assets/images/quality.webp"
+                  alt="quality"
+                  class="img-fluid district_card_img"
+                />
+              </div>
+              <div class="district_card_text">
+                <h5 class="district_card_title text-center">
+                  Quality & Satisfaction
+                </h5>
+                <p class="district_card_description text-center text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor sed do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-12 mb-3 p-4 space_common">
+            <div class="district_card">
+              <div class="text-center space_common py-3">
+                <img
+                  src="./assets/images/security.webp"
+                  alt="security"
+                  class="img-fluid district_card_img"
+                />
+              </div>
+              <div class="district_card_text">
+                <h5 class="district_card_title text-center">
+                  Security & Reliability
+                </h5>
+                <p class="district_card_description text-center text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor sed do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-12 mb-3 p-4 space_common">
+            <div class="district_card">
+              <div class="text-center space_common py-3">
+                <img
+                  src="./assets/images/flexibility.webp"
+                  alt="flexibility"
+                  class="img-fluid district_card_img"
+                />
+              </div>
+              <div class="district_card_text">
+                <h5 class="district_card_title text-center">
+                  Flexibility & Advice
+                </h5>
+                <p class="district_card_description text-center text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor sed do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-12 mb-3 p-4 space_common">
+            <div class="district_card">
+              <div class="text-center space_common py-3">
+                <img
+                  src="./assets/images/customer.webp"
+                  alt="customer"
+                  class="img-fluid district_card_img"
+                />
+              </div>
+              <div class="district_card_text">
+                <h5 class="district_card_title text-center">
+                  Customer support
+                </h5>
+                <p class="district_card_description text-center text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor sed do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- District cards section end -->
+
+    <!-- footer start  -->
+    <section class="footer-conent">
+      <div class="container footer_texts">
+        <div class="row m-0 m-0">
+          <div class="col-md-2 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title">HELP</p>
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/auth"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Register</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/auth"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Login</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="./contactus.html"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/termsandconditions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Terms & conditions</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/privacypolicy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title" style="white-space: nowrap">
+                OUR SERVICES
+              </p>
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="./district_to_district.html"
+                  class="text-decoration-none"
+                  >DISTRICT-DISTRICT</a
+                >
+              </div>
+              <div class="links2">
+                <a href="./state_to_state.html" class="text-decoration-none">
+                  STATE-STATE</a
+                >
+              </div>
+              <div class="links2">
+                <a href="#" class="text-decoration-none">
+                  INTERNATIONAL COURIER SERVICE
+                </a>
+              </div>
+              <div class="links2">
+                <a href="#" class="text-decoration-none">
+                  DOMESTIC COURIER SERVICE</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title">CONTACT</p>
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="https://maps.app.goo.gl/j7DoYn5mgP1RzUkz6"
+                  class="text-decoration-none d-flex justify-content-md-start align-items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    class="fa-solid fa-location-dot me-2 mb-5"
+                    style="color: #80dc00"
+                  ></i>
+                  <span
+                    >766, Sakthi Tower Ln, Anna Salai,<br />
+                    Thousand Lights, Chennai,<br />
+                    Tamil Nadu 600002.</span
+                  >
+                </a>
+              </div>
+              <div class="links2">
+                <a href="mailto:info@trucklah.in" class="text-decoration-none">
+                  <i
+                    class="fa-regular fa-envelope mailto:me-2"
+                    style="color: #80dc00"
+                  ></i
+                  >&nbsp;&nbsp;<span>info@trucklah.in</span></a
+                >
+              </div>
+              <div class="links2">
+                <a href="tel:919150150687" class="text-decoration-none">
+                  <i class="fa-solid fa-phone me-2" style="color: #80dc00"></i>
+                  +91 91501 50687</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 text-start mt-4 px-5 form_col">
+            <div
+              class="card contact_form py-3 px-4"
+              style="background-color: #80dc00; border: 1px solid #80dc00"
+            >
+              <div class="form-container">
+                <h2 class="text-white form_heading">
+                  LET'S TALK! MOVING IS NOW EASY.
+                </h2>
+                <form id="contactUsForm">
+                  <div class="row m-0">
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          placeholder="Name"
+                          id="contact_us_first_name"
+                          name="contact_us_first_name"
+                          required
+                        />
+                        <!-- Error message will be inserted here -->
+                        <div class="error mt-0 mb-3"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          style="box-shadow: none"
+                          placeholder="Email ID"
+                          id="contact_us_email"
+                          name="contact_us_email"
+                          required
+                        />
+                        <div class="error mt-0 mb-3 col-12"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          placeholder="Phone"
+                          aria-describedby="basic-addon1"
+                          id="contact_us_phone"
+                          name="contact_us_phone"
+                          required
+                        />
+                        <!-- Error message will be inserted here -->
+                        <div class="error mt-0 mb-3"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          placeholder="Country"
+                          aria-describedby="basic-addon1"
+                          id="contact_us_country"
+                          name="contact_us_country"
+                          required
+                        />
+                        <div class="error mt-0 mb-3 col-12"></div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <input
+                          type="text"
+                          class="footer_input form-control"
+                          placeholder="Message"
+                          aria-describedby="basic-addon1"
+                          id="contact_us_message"
+                          name="contact_us_message"
+                          required
+                        />
+                        <div class="error mt-0 mb-3 col-12"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_button_footer">
+                    <button type="submit" class="footer_submit">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer end   -->
+
+    <!-- copyrights start  -->
+    <div class="copyrights">
+      <p class="text-center m-0">
+        Copyright © 2024 YUAA Logistics Pvt Ltd. All Rights Reserved.
+      </p>
+    </div>
+    <!-- copyrights end  -->
+
+    <!-- error model -->
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="errorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modalContent">
+          <div
+            class="modal-header d-flex align-items-center justify-content-between errorHeading shadow-none mb-2"
+            style="background-color: rgb(255, 80, 80); color: white"
+          >
+            <p class="modal-title" id="errorModalLabel" style="font-size: 28px">
+              There was an error
+            </p>
+            <button
+              type="button"
+              class="btn btn-sm"
+              onclick="closePopup()"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center pt-0">
+            <!-- Error Icon -->
+            <i
+              class="fa-solid fa-circle-exclamation my-4"
+              style="color: rgb(255, 80, 80); font-size: 70px"
+            ></i>
+            <p class="mb-0 errorMagnetSubHeading fw-bold pb-4">
+              We are sorry !
+            </p>
+            <p class="mb-0 errorMagnetSubHeading text-muted fw-bold pb-2">
+              You can reach us on
+            </p>
+            <p class="mb-0 errorMobile pb-4">+91 91501 50687</p>
+
+            <!-- Contact Us Button -->
+            <a href="/" class="btn successMagnetButton">
+              <i class="fas fa-arrow m-0-left"></i> Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div
+      class="modal fade text-center"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modalContent">
+          <div
+            class="modal-header d-flex align-content-center justify-content-between"
+            style="background: #acff3b; color: #333"
+          >
+            <p
+              class="modal-title"
+              id="successModalLabel"
+              style="font-size: 28px"
+            >
+              That's all required!
+            </p>
+            <!-- Bootstrap 5 close button -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-0">
+            <!-- Success Video -->
+            <i
+              class="fa-solid fa-circle-check my-5"
+              style="color: #28a745; font-size: 80px"
+            ></i>
+            <p class="mb-0 SuccessMagnetSubHeading pb-4">
+              We will get back to you soon!
+            </p>
+
+            <!-- Back to Home Button -->
+            <a href="/">
+              <button class="btn successMagnetButton">Back to Home</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      async
+    ></script>
+    <!-- Lazyloader -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      async
+    ></script>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- jQuery Validator -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
