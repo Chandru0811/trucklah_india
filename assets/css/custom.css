@@ -143,13 +143,13 @@
 
 .banner {
   background: linear-gradient(180deg, #77ff0023, #ecf4e318, #ffffff2d),
-    url("../images/index_bg_trucklah.png") top no-repeat;
+    url("../images/index_bg_trucklah.webp") top no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 1440px) {
   .banner {
     background: linear-gradient(180deg, #77ff0023, #ecf4e318, #ffffff2d),
-      url("../images/index_bg_trucklah.png") top no-repeat;
+      url("../images/index_bg_trucklah.webp") top no-repeat;
     background-size: contain;
   }
 }
@@ -1916,6 +1916,18 @@ button.accordion-button:not(.collapsed)::after {
   border: 3px solid white !important;
   cursor: pointer;
   transition: border-color 0.3s ease-in-out;
+  position: relative;
+}
+.scroll_content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.219); /* Light gray transparent */
+  pointer-events: none; /* Allows clicking through to the card */
+  border-radius: inherit; /* Ensures the overlay matches the card's shape */
 }
 
 .scroll_content .underline_title {
