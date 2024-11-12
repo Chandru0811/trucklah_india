@@ -1880,7 +1880,7 @@ button.accordion-button:not(.collapsed)::after {
 .dhl_rounded_img_district {
   width: 70px !important;
   position: relative;
-  top: -30px;
+  /* top: -30px; */
 }
 .district_colon img {
   height: 20px;
