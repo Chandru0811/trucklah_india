@@ -1724,7 +1724,6 @@ button.accordion-button:not(.collapsed)::after {
   color: #80dc00;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 0 10px;
 }
 .booking_points {
   font-family: "Afacad";
