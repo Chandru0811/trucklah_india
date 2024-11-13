@@ -1571,7 +1571,7 @@ button.accordion-button:not(.collapsed)::after {
     font-family: "Afacad";
     font-size: 26px !important;
     font-weight: 600;
-    line-height: 30px !important;
+    line-height: 20px !important;
     text-align: center !important;
     color: #fff;
     text-underline-position: from-font;
@@ -1769,9 +1769,9 @@ button.accordion-button:not(.collapsed)::after {
   padding: 7rem 4rem;
 }
 .state_shipment_description {
-  line-height: 30px;
+  line-height: 26px;
   font-family: "Afacad";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   text-underline-position: from-font;
@@ -1874,7 +1874,7 @@ button.accordion-button:not(.collapsed)::after {
   font-weight: normal;
 }
 .sub_heading_dustrict {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: medium;
 }
 .dhl_rounded_img_district {
@@ -1987,11 +1987,18 @@ button.accordion-button:not(.collapsed)::after {
     url("../images/international_bg.webp") center no-repeat;
   background-size: cover;
 }
+.vehicles_section {
+  background: url("../images/type_vehicle_bg.webp") center no-repeat;
+  background-size: cover;
+}
 
 @media screen and (max-width: 450px) {
   .fright_text {
     color: white;
     font-size: 2.5rem !important;
+  }
+  .vehicles_cards {
+    padding: 10px !important;
   }
 }
 
@@ -2002,4 +2009,35 @@ button.accordion-button:not(.collapsed)::after {
 
 .common_green_text {
   color: #6ed237 !important;
+}
+.vehicles_cards {
+  padding: 70px 0;
+}
+.work_title {
+  padding: 40px 0;
+}
+.work_content {
+  padding: 40px 0 10px 0;
+}
+
+.vehicles_cards_title {
+  font-family: "Afacad";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.delivery_container {
+  border-radius: 10px;
+  background: #b0b9a713;
+}
+.client_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
 }
