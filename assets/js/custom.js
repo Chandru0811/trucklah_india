@@ -495,6 +495,54 @@ $("#contactForm").validate({
   },
 });
 
+$(document).ready(function () {
+  $("#calculateForm").validate({
+    rules: {
+      height: {
+        required: true,
+        number: true,
+      },
+      width: {
+        required: true,
+        number: true,
+      },
+      depth: {
+        required: true,
+        number: true,
+      },
+      weight: {
+        required: true,
+        number: true,
+      },
+      location: {
+        required: true,
+      },
+    },
+    messages: {
+      height: "Please enter a valid height in cm",
+      width: "Please enter a valid width in cm",
+      depth: "Please enter a valid depth in cm",
+      weight: "Please enter a valid weight in kg",
+      location: "Please enter a location",
+    },
+    submitHandler: function (form) {
+      const formData = $(form).serializeArray();
+      // reset
+      $(form)[0].reset();
+
+      console.log("Form Data:", formData);
+
+      $.ajax({
+        data: formData,
+
+        error: function (error) {
+          console.error("Error:", error);
+        },
+      });
+    },
+  });
+});
+
 function scrollToSection() {
   document.getElementById("safeSection").scrollIntoView({
     behavior: "smooth",

@@ -1893,11 +1893,16 @@ button.accordion-button:not(.collapsed)::after {
   color: #6ed237;
 }
 .district_card_img {
-  border: 1px solid #33333328;
-  border-radius: 40px;
-  padding: 15px;
+  border-radius: 30px;
+  padding: 30px;
   height: 60% !important;
   width: 60% !important;
+  border: 1.4px solid #33333315;
+}
+
+.district_card_description {
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .drop_us_district {
@@ -2040,4 +2045,74 @@ button.accordion-button:not(.collapsed)::after {
   justify-content: center;
   text-align: center;
   flex-grow: 1;
+}
+
+/* ------------------- domestic to domestic  section ------------------------ */
+
+.domestic_banner {
+  background: linear-gradient(170deg, #242424a8, #242424a8, #242424a8),
+    url("../images/domestic_banner.webp") center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+  .fright_text_domestic {
+    color: white;
+    font-size: 2.5rem !important;
+  }
+  .twentyplus {
+    font-size: 2rem !important;
+  }
+}
+
+.fright_text_domestic {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.transport_row_img {
+  border: 1px solid #33333328;
+  border-radius: 20px;
+  padding: 15px;
+}
+.tranport_coverage_title {
+  font-size: 1rem;
+}
+.tranport_coverage_desc {
+  font-size: 14px;
+}
+
+.schedule_btn {
+  background: #80dc00;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #80dc00;
+  padding: 5px 25px;
+  white-space: nowrap;
+  display: inline-block;
+}
+.schedule_btn:hover {
+  background: #92ed12;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #80dc00;
+}
+
+.vehicles_cards_titles span img {
+  height: 40px;
+  width: 40px !important;
+}
+.sameas span img {
+  height: 40px;
+  width: 50px;
+}
+
+.twentyplus {
+  font-size: 3rem;
+}
+.calci {
+  background: #f2f4f0;
+  padding: 1rem;
 }
