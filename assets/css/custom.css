@@ -144,9 +144,10 @@
 .banner {
   background: linear-gradient(180deg, #77ff0023, #ecf4e318, #ffffff2d),
     url("../images/index_bg_trucklah.webp") top no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
-@media screen and (max-width: 1920px) {
+
+@media screen and(max-width: 1920px) {
   .banner {
     background: linear-gradient(180deg, #77ff0023, #ecf4e318, #ffffff2d),
       url("../images/index_bg_trucklah.webp") top no-repeat;
