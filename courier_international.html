@@ -21,6 +21,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
 
@@ -100,7 +104,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./couier_domestic.html"
+                    <a class="dropdown-item" href="./courier_domestic.html"
                       >Domestic Courier Service</a
                     >
                   </li>
@@ -151,7 +155,7 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="./couier_domestic.html"
+                      <a class="dropdown-item" href="./courier_domestic.html"
                         >Domestic Courier Service</a
                       >
                     </li>
@@ -184,43 +188,562 @@
 
     <!-- Hero Section start-->
     <section class="international_banner">
-      <div
-        class="container-fluid district_cont space_common d-flex justify-content-center"
-      >
-        <div
-          class="d-flex flex-column justify-content-center align-items-start pt-4 state_content"
-        >
-          <h1 class="heading_banner_district text-start text-light">
-            <span class="safe_delivery">Trucklah</span> - Moving Made Easy
-          </h1>
-          <h2 class="sub_heading_dustrict text-start text-light">
-            AFFORDABLE,&nbsp;
-            <span class="safe_delivery">SAFE & FAST </span>
-            DELIVERY
-            <span class="dhl_rounded_img_district">
-              <img
-                src="./assets/images/DHL partner logo.svg"
-                alt="DHL"
-                class="img-fluid size_dhl"
-                style="width: 70px"
-              />
-            </span>
-          </h2>
-        </div>
-      </div>
-      <div class="row m-0">
-        <div class="col-lg-3 col-md-3 col-12"></div>
-        <div class="col-lg-6 col-md-6 col-12">
+      <div class="row m-0 d-flex justify-content-center align-items-center">
+        <div class="col-lg-7 col-md-7 col-12">
+          <div
+            class="container-fluid district_cont space_common d-flex justify-content-center"
+          >
+            <div
+              class="d-flex flex-column justify-content-center align-items-start pt-4 state_content"
+            >
+              <h1 class="heading_banner_district text-start text-light">
+                <span class="safe_delivery">Trucklah</span> - Moving Made Easy
+              </h1>
+              <h2 class="sub_heading_dustrict text-start text-light">
+                AFFORDABLE,&nbsp;
+                <span class="safe_delivery">SAFE & FAST </span>
+                DELIVERY
+                <span class="dhl_rounded_img_district">
+                  <img
+                    src="./assets/images/DHL partner logo.svg"
+                    alt="DHL"
+                    class="img-fluid size_dhl"
+                    style="width: 70px"
+                  />
+                </span>
+              </h2>
+            </div>
+          </div>
           <h3 class="text-center fright_text px-3">
             Spreading Happiness Worldwide
           </h3>
+          <div class="booknow_btn_ctr text-center pb-5 space-common">
+            <a href="./contactus.html" class="btn state_btn_booknow mt-3"
+              >BOOK NOW</a
+            >
+          </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-12"></div>
-      </div>
-      <div class="booknow_btn_ctr text-center pb-5 space-common">
-        <a href="./contactus.html" class="btn state_btn_booknow mt-3"
-          >BOOK NOW</a
-        >
+        <div class="col-lg-4 col-md-4 col-12 p-1">
+          <div class="card shadow m-1">
+            <div class="card-body">
+              <h5 class="card-title">Get Instant Quotes</h5>
+
+              <ul
+                class="nav nav-tabs form-active-tab"
+                id="quoteTabs"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link state_side_card_heading active"
+                    id="domestic-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#domestic"
+                    type="button"
+                    role="tab"
+                    aria-controls="domestic"
+                    aria-selected="true"
+                  >
+                    <i
+                      class="fa-sharp-duotone fa-solid fa-truck-fast"
+                      style="
+                        --fa-primary-color: #76ce00;
+                        --fa-secondary-color: #76ce00;
+                        font-size: 10px;
+                      "
+                    ></i>
+                    &nbsp;&nbsp;<span class="state_quate_title">Domestic</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link state_side_card_heading"
+                    id="international-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#international"
+                    type="button"
+                    role="tab"
+                    aria-controls="international"
+                    aria-selected="false"
+                  >
+                    <i
+                      class="fa-duotone fa-solid fa-plane"
+                      style="
+                        --fa-primary-color: #76ce00;
+                        --fa-secondary-color: #76ce00;
+                        font-size: 10px;
+                      "
+                    ></i>
+                    &nbsp;&nbsp;<span class="state_quate_title"
+                      >International</span
+                    >
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link state_side_card_heading"
+                    id="express-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#express"
+                    type="button"
+                    role="tab"
+                    aria-controls="express"
+                    aria-selected="false"
+                  >
+                    <i
+                      class="fa-duotone fa-solid fa-bolt"
+                      style="
+                        --fa-primary-color: #76ce00;
+                        --fa-secondary-color: #76ce00;
+                        font-size: 10px;
+                      "
+                    ></i>
+                    &nbsp;&nbsp;<span class="state_quate_title">
+                      On-demand
+                    </span>
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content mt-3" id="quoteTabsContent">
+                <!-- Domestic Form -->
+                <div
+                  class="tab-pane fade show active"
+                  id="domestic"
+                  role="tabpanel"
+                  aria-labelledby="domestic-tab"
+                >
+                  <form id="instantquotes_domestic">
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_from" class="form-label"
+                          >From:</label
+                        >
+                        <input
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_from"
+                          name="instantquotes_from"
+                          type="text"
+                        />
+                      </div>
+
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_to" class="form-label"
+                          >To:</label
+                        >
+                        <input
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_to"
+                          name="instantquotes_to"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_email1" class="form-label"
+                          >Email:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="fa-solid fa-envelope"></i
+                          ></span>
+                          <input
+                            type="email"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_email1"
+                            name="instantquotes_email1"
+                            placeholder="Enter email"
+                            aria-label="Email"
+                            aria-describedby="email-addon"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_mobile" class="form-label"
+                          >Mobile:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="mobile-addon">
+                            <i class="fa-solid fa-phone"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_mobile"
+                            name="instantquotes_mobile"
+                            placeholder="Enter mobile"
+                            aria-label="Mobile"
+                            aria-describedby="mobile-addon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_description"
+                          class="form-label"
+                          >Weight:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="weight-addon">
+                            <i class="fa-solid fa-weight-scale"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_description"
+                            name="instantquotes_description"
+                            placeholder="Kg"
+                            aria-label="Weight"
+                            aria-describedby="weight-addon"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_date" class="form-label"
+                          >Date:</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_date"
+                          name="instantquotes_date"
+                          placeholder="Kg"
+                          aria-label="Weight"
+                          aria-describedby="weight-addon"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-center pt-4"
+                    >
+                      <button
+                        class="btn btn-sm text-light"
+                        style="background: #80dc00"
+                      >
+                        Get a Quote
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- International Form -->
+                <div
+                  class="tab-pane fade"
+                  id="international"
+                  role="tabpanel"
+                  aria-labelledby="international-tab"
+                >
+                  <form id="instantquotes_international">
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_from_inter" class="form-label"
+                          >From:</label
+                        >
+                        <input
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_from_inter"
+                          name="instantquotes_from_inter"
+                          type="text"
+                        />
+                      </div>
+
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_to_inter" class="form-label"
+                          >To:</label
+                        >
+                        <input
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_to_inter"
+                          name="instantquotes_to_inter"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_email_inter"
+                          class="form-label"
+                          >Email:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="email-addon">
+                            <i class="fa-solid fa-envelope"></i>
+                          </span>
+                          <input
+                            type="email"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_email_inter"
+                            name="instantquotes_email_inter"
+                            placeholder="Enter email"
+                            aria-label="Email"
+                            aria-describedby="email-addon"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_mobile_inter"
+                          class="form-label"
+                          >Mobile:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="mobile-addon">
+                            <i class="fa-solid fa-phone"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_mobile_inter"
+                            name="instantquotes_mobile_inter"
+                            placeholder="Enter mobile"
+                            aria-label="Mobile"
+                            aria-describedby="mobile-addon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_description_inter"
+                          class="form-label"
+                          >Weight:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="weight-addon">
+                            <i class="fa-solid fa-weight-scale"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_description_inter"
+                            name="instantquotes_description_inter"
+                            placeholder="Kg"
+                            aria-label="Weight"
+                            aria-describedby="weight-addon"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_date_inter" class="form-label"
+                          >Date:</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_date_inter"
+                          name="instantquotes_date_inter"
+                          placeholder="Kg"
+                          aria-label="Weight"
+                          aria-describedby="weight-addon"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-center pt-4"
+                    >
+                      <button
+                        class="btn btn-sm text-light"
+                        style="background: #80dc00"
+                      >
+                        Get a Quote
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Express Form -->
+                <div
+                  class="tab-pane fade"
+                  id="express"
+                  role="tabpanel"
+                  aria-labelledby="express-tab"
+                >
+                  <form id="instantquotes_ondemond">
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_from_demond"
+                          class="form-label"
+                          >From:</label
+                        >
+                        <input
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_from_demond"
+                          name="instantquotes_from_demond"
+                          type="text"
+                        />
+                      </div>
+
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label for="instantquotes_to_demond" class="form-label"
+                          >To:</label
+                        >
+                        <input
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_to_demond"
+                          name="instantquotes_to_demond"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_email_demond"
+                          class="form-label"
+                          >Email:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="email-addon">
+                            <i class="fa-solid fa-envelope"></i>
+                          </span>
+                          <input
+                            type="email"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_email_demond"
+                            name="instantquotes_email_demond"
+                            placeholder="Enter email"
+                            aria-label="Email"
+                            aria-describedby="email-addon"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_mobile_demond"
+                          class="form-label"
+                          >Mobile:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="mobile-addon">
+                            <i class="fa-solid fa-phone"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_mobile_demond"
+                            name="instantquotes_mobile_demond"
+                            placeholder="Enter mobile"
+                            aria-label="Mobile"
+                            aria-describedby="mobile-addon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center">
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_description_demond"
+                          class="form-label"
+                          >Weight:</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="weight-addon">
+                            <i class="fa-solid fa-weight-scale"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="form-control form-control-sm focus_input"
+                            id="instantquotes_description_demond"
+                            name="instantquotes_description_demond"
+                            placeholder="Kg"
+                            aria-label="Weight"
+                            aria-describedby="weight-addon"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="col-md-6 col-lg-6 col-12 mb-2 d-flex flex-column align-items-start"
+                      >
+                        <label
+                          for="instantquotes_date_demond"
+                          class="form-label"
+                          >Date:</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control form-control-sm focus_input"
+                          id="instantquotes_date_demond"
+                          name="instantquotes_date_demond"
+                          placeholder="Kg"
+                          aria-label="Weight"
+                          aria-describedby="weight-addon"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-center pt-4"
+                    >
+                      <button
+                        class="btn btn-sm text-light"
+                        style="background: #80dc00"
+                      >
+                        Get a Quote
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Hero Section End -->
@@ -676,7 +1199,7 @@
         </div>
         <div class="col-lg-3 col-md-3 col-12"></div>
       </div>
-      <div class="container">
+      <!-- <div class="container">
         <div class="row mt-5 mx-0 delivery_container">
           <div class="col-lg-2 col-md-2 col-12 p-4 space_common">
             <div class="client_icon text-center p-4 space_common">
@@ -735,7 +1258,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- Our clients section end -->
 
@@ -847,7 +1370,7 @@
                 </a>
               </div>
               <div class="links2">
-                <a href="./couier_domestic.html" class="text-decoration-none">
+                <a href="./courier_domestic.html" class="text-decoration-none">
                   DOMESTIC COURIER SERVICE</a
                 >
               </div>

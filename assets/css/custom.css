@@ -1588,7 +1588,11 @@ button.accordion-button:not(.collapsed)::after {
 }
 .state_colon img {
   height: 20px;
-  width: 100px;
+  width: 70px;
+}
+.state_colons img {
+  height: 20px;
+  width: 65px;
 }
 .state_colon_end img {
   position: relative;
